@@ -9,17 +9,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-
 namespace Stok_Programı
 {
-    public partial class Form5 : Form
+    public partial class Form7 : Form
     {
         SqlConnection baglanti;
         SqlCommand komut;
         SqlDataReader dr;
-        public Form5()
+        public Form7()
         {
             InitializeComponent();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();
+            baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
+            firma_listele();
+            urun_listele();
         }
         private void firma_listele()
         {
@@ -55,15 +63,6 @@ namespace Stok_Programı
             timer1.Start();
         }
 
-        private void Form5_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-            toolStripStatusLabel1.Text = DateTime.Now.ToString();
-            baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
-            firma_listele();
-            urun_listele();
-        }
-
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
@@ -75,6 +74,7 @@ namespace Stok_Programı
             cmbx_urunadi.Text = "";
             txt_adet.Text = "";
             txt_giristarihi.Text = "";
+            txt_islem.Text = "";
         }
 
         private void cmbx_urunadi_SelectedIndexChanged(object sender, EventArgs e)
@@ -89,27 +89,26 @@ namespace Stok_Programı
             {
                 Stream stream = dr.GetStream(4);
                 pctrbx_resim.Image = Image.FromStream(stream);
-
+              
             }
-            baglanti.Close(); 
+            baglanti.Close();  
         }
 
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
-            if (cmbx_firmaadi.Text != "" && cmbx_urunadi.Text != "" && txt_adet.Text != "")
+            if (cmbx_firmaadi.Text != "" && cmbx_urunadi.Text != "" && txt_adet.Text != "" && txt_islem.Text != "")
             {
-
                 baglanti.Open();
                 komut = new SqlCommand();
                 komut.Connection = baglanti;
-                komut.CommandText = "insert into UretimCikis(FirmaAdi, UrunKodu, CikisTarihi, UrunAdet) values ('" + cmbx_firmaadi.Text + "','" + cmbx_urunadi.Text + "','" + txt_giristarihi.Text + "','" + txt_adet.Text + "')";
+                komut.CommandText = "insert into UrunGiris(FirmaAdi, UrunKodu, GirisTarihi, UrunAdet, İslem) values ('" + cmbx_firmaadi.Text + "','" + cmbx_urunadi.Text + "','" + txt_giristarihi.Text + "','" + txt_adet.Text + "','" + txt_islem.Text + "')";
                 komut.ExecuteNonQuery();
                 baglanti.Close();
 
                 baglanti.Open();
                 SqlCommand komut2 = new SqlCommand();
                 komut2.Connection = baglanti;
-                komut2.CommandText = "update UrunKayit set ToplamAdet=ToplamAdet-@miktar where UrunKodu=@kod";
+                komut2.CommandText = "update UrunKayit set ToplamAdet=ToplamAdet+@miktar where UrunKodu=@kod";
                 komut2.Parameters.AddWithValue("@kod", cmbx_urunadi.Text);
                 komut2.Parameters.AddWithValue("@miktar", int.Parse(txt_adet.Text));
                 komut2.ExecuteNonQuery();
@@ -117,6 +116,7 @@ namespace Stok_Programı
 
                 MessageBox.Show("Kayıt Başarılı.");
             }
+
             else
                 MessageBox.Show("Kayıt Gerçekleştirilemedi.Tekrar Deneyiniz.");
         }

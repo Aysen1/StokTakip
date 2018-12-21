@@ -39,8 +39,8 @@ namespace Stok_Programı
 
         private void btn_giris_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.Show();
+            Form7 form7 = new Form7();
+            form7.Show();
             this.Hide();
            
         }
@@ -61,12 +61,18 @@ namespace Stok_Programı
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();
+            timer1.Start();
         }
     }
 }

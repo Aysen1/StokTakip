@@ -25,7 +25,7 @@ namespace Stok_Programı
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
-            txt_kayit_tarihi.Text = DateTime.Now.ToString();
+            
         }
 
         private void btn_temizle_Click(object sender, EventArgs e)
@@ -69,12 +69,19 @@ namespace Stok_Programı
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            txt_kayit_tarihi.Text = DateTime.Now.ToString();
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();
+            timer1.Start();
         }
     }
 }

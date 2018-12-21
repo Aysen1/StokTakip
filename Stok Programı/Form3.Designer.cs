@@ -154,8 +154,8 @@
             // stoklarıRaporlaToolStripMenuItem
             // 
             this.stoklarıRaporlaToolStripMenuItem.Name = "stoklarıRaporlaToolStripMenuItem";
-            this.stoklarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.stoklarıRaporlaToolStripMenuItem.Text = "Stokı Raporu";
+            this.stoklarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.stoklarıRaporlaToolStripMenuItem.Text = "Stok Raporu";
             // 
             // yardımToolStripMenuItem
             // 
@@ -258,6 +258,10 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(35, 17);
             this.toolStripStatusLabel1.Text = "timer";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form3
             // 

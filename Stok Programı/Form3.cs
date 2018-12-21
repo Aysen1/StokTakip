@@ -17,6 +17,7 @@ namespace Stok_Programı
         SqlConnection baglanti;
         SqlCommand komut;
         string resimpath;
+        SqlDataReader dr;
         public Form3()
         {
             InitializeComponent();
@@ -27,9 +28,19 @@ namespace Stok_Programı
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
-            txt_kayit_tarihi.Text = DateTime.Now.ToString();
+            firma_listele();
         }
-
+        private void firma_listele()
+        {
+            komut = new SqlCommand("select * from FirmaKayit",baglanti);
+            baglanti.Open();
+            dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbbx_firma_adi.Items.Add(dr["FirmaAdi"]);
+            }
+            baglanti.Close();
+        }
         private void btn_temizle_Click(object sender, EventArgs e)
         {
             cmbbx_firma_adi.Text = "";
@@ -74,7 +85,7 @@ namespace Stok_Programı
 
         private void btn_resim_sil_Click(object sender, EventArgs e)
         {
-
+            pctrbx_urunresim.Image = null;
         }
 
         private void anaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,12 +99,19 @@ namespace Stok_Programı
         {
             Form1 form1 = new Form1();
             form1.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            txt_kayit_tarihi.Text = DateTime.Now.ToString();
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();
+            timer1.Start();
         }
     }
 }

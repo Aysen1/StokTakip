@@ -4,7 +4,6 @@ C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Progr
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form2.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form3.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form4.resources
-C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form5.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form6.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Properties.Resources.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.csproj.GenerateResource.Cache
@@ -12,3 +11,5 @@ C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Progr
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\bin\Debug\Stok Programı.pdb
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.exe
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.pdb
+C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form7.resources
+C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Form5.resources
