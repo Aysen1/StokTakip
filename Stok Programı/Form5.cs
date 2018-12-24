@@ -98,24 +98,41 @@ namespace Stok_Programı
         {
             if (cmbx_firmaadi.Text != "" && cmbx_urunadi.Text != "" && txt_adet.Text != "")
             {
-
                 baglanti.Open();
-                komut = new SqlCommand();
-                komut.Connection = baglanti;
-                komut.CommandText = "insert into UretimCikis(FirmaAdi, UrunKodu, CikisTarihi, UrunAdet) values ('" + cmbx_firmaadi.Text + "','" + cmbx_urunadi.Text + "','" + txt_giristarihi.Text + "','" + txt_adet.Text + "')";
-                komut.ExecuteNonQuery();
-                baglanti.Close();
+                SqlCommand komut3 = new SqlCommand("select * from UrunKayit where UrunKodu=@id", baglanti);
+                komut3.Parameters.AddWithValue("@id", cmbx_urunadi.Text);
+                SqlDataReader dr = komut3.ExecuteReader();
+                if (dr.Read())
+                {
 
-                baglanti.Open();
-                SqlCommand komut2 = new SqlCommand();
-                komut2.Connection = baglanti;
-                komut2.CommandText = "update UrunKayit set ToplamAdet=ToplamAdet-@miktar where UrunKodu=@kod";
-                komut2.Parameters.AddWithValue("@kod", cmbx_urunadi.Text);
-                komut2.Parameters.AddWithValue("@miktar", int.Parse(txt_adet.Text));
-                komut2.ExecuteNonQuery();
-                baglanti.Close();
+                    if (int.Parse(txt_adet.Text) <= int.Parse(dr[5].ToString()) && int.Parse(dr[5].ToString()) != 0)
+                    {
+                        baglanti.Close();
 
-                MessageBox.Show("Kayıt Başarılı.");
+                        baglanti.Open();
+                        komut = new SqlCommand();
+                        komut.Connection = baglanti;
+                        komut.CommandText = "insert into UretimCikis(FirmaAdi, UrunKodu, CikisTarihi, UrunAdet) values ('" + cmbx_firmaadi.Text + "','" + cmbx_urunadi.Text + "','" + txt_giristarihi.Text + "','" + txt_adet.Text + "')";
+                        komut.ExecuteNonQuery();
+                        baglanti.Close();
+
+                        baglanti.Open();
+                        SqlCommand komut2 = new SqlCommand();
+                        komut2.Connection = baglanti;
+                        komut2.CommandText = "update UrunKayit set ToplamAdet=ToplamAdet-@miktar where UrunKodu=@kod";
+                        komut2.Parameters.AddWithValue("@kod", cmbx_urunadi.Text);
+                        komut2.Parameters.AddWithValue("@miktar", int.Parse(txt_adet.Text));
+                        komut2.ExecuteNonQuery();
+                        baglanti.Close();
+
+                        MessageBox.Show("Kayıt Başarılı.");
+                    }
+                    else
+                    { 
+                        MessageBox.Show("Stokta yeterli ürün yok!");
+                        baglanti.Close();
+                    }
+                }
             }
             else
                 MessageBox.Show("Kayıt Gerçekleştirilemedi.Tekrar Deneyiniz.");

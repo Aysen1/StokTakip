@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Stok_Programı
 {
     public partial class Form4 : Form
@@ -25,7 +26,8 @@ namespace Stok_Programı
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
-            
+            il_listele();
+            //ilce_listele();
         }
 
         private void btn_temizle_Click(object sender, EventArgs e)
@@ -36,8 +38,8 @@ namespace Stok_Programı
             txt_vergidaire.Text = "";
             txt_vergino.Text = "";
             txt_kayit_tarihi.Text = DateTime.Now.ToString();
-            txt_il.Text = "";
-            txt_ilce.Text = "";
+            cmbx_il.Text = "";
+            cmbx_ilce.Text = "";
             txt_adres.Text = "";
         }
 
@@ -46,11 +48,17 @@ namespace Stok_Programı
             baglanti.Open();
             komut = new SqlCommand();
             komut.Connection = baglanti;
-            if(txt_adres.Text != " " && txt_firmaadi.Text!="" && txt_il.Text!="" && txt_ilce.Text!="" && txt_sorumlu.Text!="" && txt_telno.Text!="" && txt_vergidaire.Text!="" && txt_vergino.Text!="")
+            if(txt_adres.Text != " " && txt_firmaadi.Text!="" && cmbx_il.Text!="" && cmbx_ilce.Text!="" && txt_sorumlu.Text!=""  && txt_vergidaire.Text!="" && txt_vergino.Text!="" && txt_mersis.Text!="")
             {
-                komut.CommandText = "insert into FirmaKayit(FirmaAdi, SorumluAdi, TelefonNo, VergiDairesiAdi, VergiNo, KayitTarihi, Sehir, ilce, Adres) values ('"+ txt_firmaadi.Text +"','"+ txt_sorumlu.Text +"','"+ txt_telno.Text +"','"+ txt_vergidaire.Text +"','"+ txt_vergino.Text +"','"+txt_kayit_tarihi.Text+"','"+txt_il.Text+"','"+txt_ilce.Text +"','"+ txt_adres.Text +"')";
-                komut.ExecuteNonQuery();
-                MessageBox.Show("Kayıt Başarılı!");
+                if (txt_telno.Text.Length == 11)
+                {
+                    komut.CommandText = "insert into FirmaKayit(FirmaAdi, SorumluAdi, TelefonNo, VergiDairesiAdi, VergiNo, KayitTarihi, Sehir, ilce, Adres, MersisNo) values ('" + txt_firmaadi.Text + "','" + txt_sorumlu.Text + "','" + txt_telno.Text + "','" + txt_vergidaire.Text + "','" + txt_vergino.Text + "','" + txt_kayit_tarihi.Text + "','" + cmbx_il.Text + "','" + cmbx_ilce.Text + "','" + txt_adres.Text + "','" + txt_mersis.Text + "')";
+                    komut.ExecuteNonQuery();
+                    MessageBox.Show("Kayıt Başarılı!");
+                }
+                else
+                    MessageBox.Show("Lütfen geçerli bir telefon numarası giriniz.");
+                
             }
             else
                 MessageBox.Show("Lütfen gerekli tüm alanları doldurun.");
@@ -82,6 +90,30 @@ namespace Stok_Programı
             txt_kayit_tarihi.Text = DateTime.Now.ToString();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             timer1.Start();
+        }
+        private void il_listele()
+        {
+            baglanti.Open();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select * from iller ORDER BY id ASC", baglanti);
+            da.Fill(dt);
+            cmbx_il.ValueMember = "id";
+            cmbx_il.DisplayMember = "sehir";
+            cmbx_il.DataSource = dt;
+            baglanti.Close();
+        }
+
+
+        private void cmbx_il_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbx_il.SelectedIndex != -1)
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter("select * from ilceler where sehir=" + cmbx_il.SelectedValue, baglanti);
+                da.Fill(dt);
+                cmbx_ilce.DisplayMember = "ilce";
+                cmbx_ilce.DataSource = dt;
+            }
         }
     }
 }

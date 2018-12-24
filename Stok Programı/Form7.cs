@@ -27,7 +27,6 @@ namespace Stok_Programı
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
-            urun_listele();
         }
         private void firma_listele()
         {
@@ -44,12 +43,14 @@ namespace Stok_Programı
         }
         private void urun_listele()
         {
+            cmbx_urunadi.Items.Clear(); //yazılmadığı zaman cmbx_urunadi elemanları kademeli olarak artmaktadır.
             komut = new SqlCommand();
             komut.Connection = baglanti;
             baglanti.Open();
-            komut.CommandText = "select * from UrunKayit";
+            komut.CommandText = "select * from UrunKayit where FirmaAdi=@firma";
+            komut.Parameters.AddWithValue("@firma", cmbx_firmaadi.Text);
             dr = komut.ExecuteReader();
-            while (dr.Read())
+            while(dr.Read())
             {
                 cmbx_urunadi.Items.Add(dr["UrunKodu"]);
             }
@@ -96,6 +97,7 @@ namespace Stok_Programı
 
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
+            
             if (cmbx_firmaadi.Text != "" && cmbx_urunadi.Text != "" && txt_adet.Text != "" && txt_islem.Text != "")
             {
                 baglanti.Open();
@@ -126,6 +128,14 @@ namespace Stok_Programı
             Form6 form6 = new Form6();
             form6.Show();
             this.Hide();
+        }
+
+        private void cmbx_firmaadi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbx_firmaadi.SelectedIndex != -1)
+            {
+                urun_listele();
+            }
         }
     }
 }

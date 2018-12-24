@@ -50,31 +50,69 @@ namespace Stok_Programı
 
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
-            FileStream fs =new FileStream(resimpath, FileMode.Open, FileAccess.Read);
+
+           if (cmbbx_firma_adi.Text != "" && txt_urun_kodu.Text != "")
+           {
+               urun_kayit();
+               /*baglanti.Open();
+               komut = new SqlCommand("select * from UrunKayit where UrunKodu=@id",baglanti);
+               komut.Parameters.AddWithValue("@id", txt_urun_kodu.Text);
+               dr = komut.ExecuteReader();
+               if (dr.Read())
+               {
+                   if (dr[2].ToString() != txt_urun_kodu.Text)
+                   {
+                     baglanti.Close();
+                     urun_kayit();
+                     /*FileStream fs =new FileStream(resimpath, FileMode.Open, FileAccess.Read);
+                     BinaryReader br = new BinaryReader(fs);
+                     byte[] resim=br.ReadBytes((int) fs.Length);
+                     br.Close();
+                     fs.Close();
+
+                     baglanti.Open();
+                     komut = new SqlCommand();
+                     komut.Connection = baglanti;    
+                     komut.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim,ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
+                     komut.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
+                     komut.ExecuteNonQuery();
+                     MessageBox.Show("başarılı.");
+                     baglanti.Close();*
+                   }
+                   else
+                   {
+                       baglanti.Close();
+                       MessageBox.Show("Bu kodda bir ürün bulunmaktadır.");
+                   }
+               }
+               */
+           }
+           else
+               MessageBox.Show("Lütfen Bilgileri Tam Giriniz.");
+          
+        }
+        private void urun_kayit()
+        {
+            FileStream fs = new FileStream(resimpath, FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
-            byte[] resim=br.ReadBytes((int) fs.Length);
+            byte[] resim = br.ReadBytes((int)fs.Length);
             br.Close();
             fs.Close();
-            komut = new SqlCommand();
+
+            SqlCommand komut2 = new SqlCommand();
+            komut2.Connection = baglanti;
             baglanti.Open();
-            komut.Connection = baglanti;
-            if(cmbbx_firma_adi.Text!="" && txt_urun_kodu.Text!="" )
-            {
-                komut.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim,ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
-                komut.Parameters.Add("@image",SqlDbType.Image, resim.Length).Value=resim;
-                komut.ExecuteNonQuery();
-                MessageBox.Show("başarılı.");
-            }
-            else
-                MessageBox.Show("Lütfen gerekli tüm alanları doldurun.");
-          
-            baglanti.Close();
+            komut2.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim, ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
+            komut2.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
+            komut2.ExecuteNonQuery();
+            MessageBox.Show("başarılı.");
+            baglanti.Close(); 
         }
 
         private void btn_resim_yukle_Click(object sender, EventArgs e)
         {
             OpenFileDialog opfd1 = new OpenFileDialog();
-            opfd1.Filter = "Jpeg Dosyası (*.jpg)|*.jpg |Png Dosyası (*.png)|*.png";
+            opfd1.Filter = "Png Dosyası (*.png)|*.png";
             //opfd1.ShowDialog();
             if(opfd1.ShowDialog()==DialogResult.OK)
             {
@@ -112,6 +150,28 @@ namespace Stok_Programı
             txt_kayit_tarihi.Text = DateTime.Now.ToString();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             timer1.Start();
+        }
+
+        private void txt_urun_kodu_TextChanged(object sender, EventArgs e)
+        {
+       
+        }
+        private void urunkod_kontrol()
+        {
+            baglanti.Open();
+            komut = new SqlCommand();
+            komut.Connection = baglanti;
+            komut.CommandText = "select * from UrunKayit where UrunKodu=@kod ";
+            komut.Parameters.AddWithValue("@kod", txt_urun_kodu.Text);
+            dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                if (txt_urun_kodu.Text == dr["UrunKodu"].ToString())
+                {
+                    MessageBox.Show("Ürün Bulunmaktadır.");
+                }
+            }
+            baglanti.Close(); 
         }
     }
 }

@@ -35,20 +35,20 @@
             this.stokRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pctrbx_resim = new System.Windows.Forms.PictureBox();
-            this.grpbx_islem = new System.Windows.Forms.GroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.btn_temizle = new System.Windows.Forms.Button();
-            this.btn_kaydet = new System.Windows.Forms.Button();
-            this.lbl_firmaadi = new System.Windows.Forms.Label();
-            this.cmbx_firmaadi = new System.Windows.Forms.ComboBox();
-            this.cmbx_urunadi = new System.Windows.Forms.ComboBox();
-            this.lbl_urunkodu = new System.Windows.Forms.Label();
-            this.txt_giristarihi = new System.Windows.Forms.TextBox();
-            this.lbl_giristarihi = new System.Windows.Forms.Label();
             this.txt_adet = new System.Windows.Forms.TextBox();
             this.lbl_adet = new System.Windows.Forms.Label();
+            this.txt_giristarihi = new System.Windows.Forms.TextBox();
+            this.lbl_giristarihi = new System.Windows.Forms.Label();
+            this.cmbx_urunadi = new System.Windows.Forms.ComboBox();
+            this.lbl_urunkodu = new System.Windows.Forms.Label();
+            this.cmbx_firmaadi = new System.Windows.Forms.ComboBox();
+            this.lbl_firmaadi = new System.Windows.Forms.Label();
+            this.pctrbx_resim = new System.Windows.Forms.PictureBox();
+            this.grpbx_islem = new System.Windows.Forms.GroupBox();
+            this.btn_kaydet = new System.Windows.Forms.Button();
+            this.btn_temizle = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -113,75 +113,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilgiler";
             // 
-            // pctrbx_resim
+            // txt_adet
             // 
-            this.pctrbx_resim.Location = new System.Drawing.Point(250, 108);
-            this.pctrbx_resim.Name = "pctrbx_resim";
-            this.pctrbx_resim.Size = new System.Drawing.Size(100, 100);
-            this.pctrbx_resim.TabIndex = 2;
-            this.pctrbx_resim.TabStop = false;
+            this.txt_adet.Location = new System.Drawing.Point(96, 192);
+            this.txt_adet.Name = "txt_adet";
+            this.txt_adet.Size = new System.Drawing.Size(121, 20);
+            this.txt_adet.TabIndex = 12;
             // 
-            // grpbx_islem
+            // lbl_adet
             // 
-            this.grpbx_islem.Controls.Add(this.btn_kaydet);
-            this.grpbx_islem.Controls.Add(this.btn_temizle);
-            this.grpbx_islem.Location = new System.Drawing.Point(12, 289);
-            this.grpbx_islem.Name = "grpbx_islem";
-            this.grpbx_islem.Size = new System.Drawing.Size(346, 40);
-            this.grpbx_islem.TabIndex = 2;
-            this.grpbx_islem.TabStop = false;
-            this.grpbx_islem.Text = "İşlem";
+            this.lbl_adet.AutoSize = true;
+            this.lbl_adet.Location = new System.Drawing.Point(6, 199);
+            this.lbl_adet.Name = "lbl_adet";
+            this.lbl_adet.Size = new System.Drawing.Size(58, 13);
+            this.lbl_adet.TabIndex = 11;
+            this.lbl_adet.Text = "Ürün Adet:";
             // 
-            // timer1
+            // txt_giristarihi
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.txt_giristarihi.Location = new System.Drawing.Point(96, 136);
+            this.txt_giristarihi.Name = "txt_giristarihi";
+            this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
+            this.txt_giristarihi.TabIndex = 10;
             // 
-            // statusStrip1
+            // lbl_giristarihi
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 332);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(358, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // btn_temizle
-            // 
-            this.btn_temizle.Location = new System.Drawing.Point(60, 11);
-            this.btn_temizle.Name = "btn_temizle";
-            this.btn_temizle.Size = new System.Drawing.Size(75, 23);
-            this.btn_temizle.TabIndex = 0;
-            this.btn_temizle.Text = "TEMİZLE";
-            this.btn_temizle.UseVisualStyleBackColor = true;
-            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
-            // 
-            // btn_kaydet
-            // 
-            this.btn_kaydet.Location = new System.Drawing.Point(211, 11);
-            this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
-            this.btn_kaydet.TabIndex = 1;
-            this.btn_kaydet.Text = "KAYDET";
-            this.btn_kaydet.UseVisualStyleBackColor = true;
-            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
-            // 
-            // lbl_firmaadi
-            // 
-            this.lbl_firmaadi.AutoSize = true;
-            this.lbl_firmaadi.Location = new System.Drawing.Point(7, 37);
-            this.lbl_firmaadi.Name = "lbl_firmaadi";
-            this.lbl_firmaadi.Size = new System.Drawing.Size(53, 13);
-            this.lbl_firmaadi.TabIndex = 1;
-            this.lbl_firmaadi.Text = "Firma Adi:";
-            // 
-            // cmbx_firmaadi
-            // 
-            this.cmbx_firmaadi.FormattingEnabled = true;
-            this.cmbx_firmaadi.Location = new System.Drawing.Point(96, 29);
-            this.cmbx_firmaadi.Name = "cmbx_firmaadi";
-            this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
-            this.cmbx_firmaadi.TabIndex = 6;
+            this.lbl_giristarihi.AutoSize = true;
+            this.lbl_giristarihi.Location = new System.Drawing.Point(7, 143);
+            this.lbl_giristarihi.Name = "lbl_giristarihi";
+            this.lbl_giristarihi.Size = new System.Drawing.Size(58, 13);
+            this.lbl_giristarihi.TabIndex = 9;
+            this.lbl_giristarihi.Text = "ÇıkışTarihi:";
             // 
             // cmbx_urunadi
             // 
@@ -201,37 +163,75 @@
             this.lbl_urunkodu.TabIndex = 7;
             this.lbl_urunkodu.Text = "Ürün Kodu:";
             // 
-            // txt_giristarihi
+            // cmbx_firmaadi
             // 
-            this.txt_giristarihi.Location = new System.Drawing.Point(96, 136);
-            this.txt_giristarihi.Name = "txt_giristarihi";
-            this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
-            this.txt_giristarihi.TabIndex = 10;
+            this.cmbx_firmaadi.FormattingEnabled = true;
+            this.cmbx_firmaadi.Location = new System.Drawing.Point(96, 29);
+            this.cmbx_firmaadi.Name = "cmbx_firmaadi";
+            this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
+            this.cmbx_firmaadi.TabIndex = 6;
             // 
-            // lbl_giristarihi
+            // lbl_firmaadi
             // 
-            this.lbl_giristarihi.AutoSize = true;
-            this.lbl_giristarihi.Location = new System.Drawing.Point(7, 143);
-            this.lbl_giristarihi.Name = "lbl_giristarihi";
-            this.lbl_giristarihi.Size = new System.Drawing.Size(59, 13);
-            this.lbl_giristarihi.TabIndex = 9;
-            this.lbl_giristarihi.Text = "Giriş Tarihi:";
+            this.lbl_firmaadi.AutoSize = true;
+            this.lbl_firmaadi.Location = new System.Drawing.Point(7, 37);
+            this.lbl_firmaadi.Name = "lbl_firmaadi";
+            this.lbl_firmaadi.Size = new System.Drawing.Size(53, 13);
+            this.lbl_firmaadi.TabIndex = 1;
+            this.lbl_firmaadi.Text = "Firma Adi:";
             // 
-            // txt_adet
+            // pctrbx_resim
             // 
-            this.txt_adet.Location = new System.Drawing.Point(96, 192);
-            this.txt_adet.Name = "txt_adet";
-            this.txt_adet.Size = new System.Drawing.Size(121, 20);
-            this.txt_adet.TabIndex = 12;
+            this.pctrbx_resim.Location = new System.Drawing.Point(250, 108);
+            this.pctrbx_resim.Name = "pctrbx_resim";
+            this.pctrbx_resim.Size = new System.Drawing.Size(100, 100);
+            this.pctrbx_resim.TabIndex = 2;
+            this.pctrbx_resim.TabStop = false;
             // 
-            // lbl_adet
+            // grpbx_islem
             // 
-            this.lbl_adet.AutoSize = true;
-            this.lbl_adet.Location = new System.Drawing.Point(6, 199);
-            this.lbl_adet.Name = "lbl_adet";
-            this.lbl_adet.Size = new System.Drawing.Size(58, 13);
-            this.lbl_adet.TabIndex = 11;
-            this.lbl_adet.Text = "Ürün Adet:";
+            this.grpbx_islem.Controls.Add(this.btn_kaydet);
+            this.grpbx_islem.Controls.Add(this.btn_temizle);
+            this.grpbx_islem.Location = new System.Drawing.Point(12, 289);
+            this.grpbx_islem.Name = "grpbx_islem";
+            this.grpbx_islem.Size = new System.Drawing.Size(346, 40);
+            this.grpbx_islem.TabIndex = 2;
+            this.grpbx_islem.TabStop = false;
+            this.grpbx_islem.Text = "İşlem";
+            // 
+            // btn_kaydet
+            // 
+            this.btn_kaydet.Location = new System.Drawing.Point(211, 11);
+            this.btn_kaydet.Name = "btn_kaydet";
+            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
+            this.btn_kaydet.TabIndex = 1;
+            this.btn_kaydet.Text = "KAYDET";
+            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
+            // 
+            // btn_temizle
+            // 
+            this.btn_temizle.Location = new System.Drawing.Point(60, 11);
+            this.btn_temizle.Name = "btn_temizle";
+            this.btn_temizle.Size = new System.Drawing.Size(75, 23);
+            this.btn_temizle.TabIndex = 0;
+            this.btn_temizle.Text = "TEMİZLE";
+            this.btn_temizle.UseVisualStyleBackColor = true;
+            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 332);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(358, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
@@ -240,6 +240,7 @@
             // 
             // Form5
             // 
+            this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 354);
@@ -248,7 +249,9 @@
             this.Controls.Add(this.pctrbx_resim);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form5";
             this.Text = "ÜRETİM ÇIKIŞ";
             this.Load += new System.EventHandler(this.Form5_Load);

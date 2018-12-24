@@ -35,23 +35,23 @@
             this.stokRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbx_bilgi = new System.Windows.Forms.GroupBox();
-            this.grpbx_islem = new System.Windows.Forms.GroupBox();
-            this.lbl_firmaadi = new System.Windows.Forms.Label();
-            this.lbl_urunkodu = new System.Windows.Forms.Label();
-            this.lbl_giristarihi = new System.Windows.Forms.Label();
-            this.lbl_adet = new System.Windows.Forms.Label();
-            this.lbl_islemm = new System.Windows.Forms.Label();
-            this.cmbx_firmaadi = new System.Windows.Forms.ComboBox();
-            this.cmbx_urunadi = new System.Windows.Forms.ComboBox();
-            this.txt_giristarihi = new System.Windows.Forms.TextBox();
-            this.txt_adet = new System.Windows.Forms.TextBox();
             this.txt_islem = new System.Windows.Forms.TextBox();
-            this.btn_temizle = new System.Windows.Forms.Button();
+            this.txt_adet = new System.Windows.Forms.TextBox();
+            this.txt_giristarihi = new System.Windows.Forms.TextBox();
+            this.cmbx_urunadi = new System.Windows.Forms.ComboBox();
+            this.cmbx_firmaadi = new System.Windows.Forms.ComboBox();
+            this.lbl_islemm = new System.Windows.Forms.Label();
+            this.lbl_adet = new System.Windows.Forms.Label();
+            this.lbl_giristarihi = new System.Windows.Forms.Label();
+            this.lbl_urunkodu = new System.Windows.Forms.Label();
+            this.lbl_firmaadi = new System.Windows.Forms.Label();
+            this.grpbx_islem = new System.Windows.Forms.GroupBox();
             this.btn_kaydet = new System.Windows.Forms.Button();
+            this.btn_temizle = new System.Windows.Forms.Button();
             this.pctrbx_resim = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip2.SuspendLayout();
             this.grpbx_bilgi.SuspendLayout();
             this.grpbx_islem.SuspendLayout();
@@ -117,6 +117,90 @@
             this.grpbx_bilgi.TabStop = false;
             this.grpbx_bilgi.Text = "Bilgiler";
             // 
+            // txt_islem
+            // 
+            this.txt_islem.Location = new System.Drawing.Point(96, 198);
+            this.txt_islem.Name = "txt_islem";
+            this.txt_islem.Size = new System.Drawing.Size(121, 20);
+            this.txt_islem.TabIndex = 9;
+            // 
+            // txt_adet
+            // 
+            this.txt_adet.Location = new System.Drawing.Point(96, 155);
+            this.txt_adet.Name = "txt_adet";
+            this.txt_adet.Size = new System.Drawing.Size(121, 20);
+            this.txt_adet.TabIndex = 8;
+            // 
+            // txt_giristarihi
+            // 
+            this.txt_giristarihi.Location = new System.Drawing.Point(96, 111);
+            this.txt_giristarihi.Name = "txt_giristarihi";
+            this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
+            this.txt_giristarihi.TabIndex = 7;
+            // 
+            // cmbx_urunadi
+            // 
+            this.cmbx_urunadi.FormattingEnabled = true;
+            this.cmbx_urunadi.Location = new System.Drawing.Point(96, 68);
+            this.cmbx_urunadi.Name = "cmbx_urunadi";
+            this.cmbx_urunadi.Size = new System.Drawing.Size(121, 21);
+            this.cmbx_urunadi.TabIndex = 6;
+            this.cmbx_urunadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_urunadi_SelectedIndexChanged);
+            // 
+            // cmbx_firmaadi
+            // 
+            this.cmbx_firmaadi.FormattingEnabled = true;
+            this.cmbx_firmaadi.Location = new System.Drawing.Point(96, 29);
+            this.cmbx_firmaadi.Name = "cmbx_firmaadi";
+            this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
+            this.cmbx_firmaadi.TabIndex = 5;
+            this.cmbx_firmaadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_firmaadi_SelectedIndexChanged);
+            // 
+            // lbl_islemm
+            // 
+            this.lbl_islemm.AutoSize = true;
+            this.lbl_islemm.Location = new System.Drawing.Point(7, 205);
+            this.lbl_islemm.Name = "lbl_islemm";
+            this.lbl_islemm.Size = new System.Drawing.Size(34, 13);
+            this.lbl_islemm.TabIndex = 4;
+            this.lbl_islemm.Text = "İşlem:";
+            // 
+            // lbl_adet
+            // 
+            this.lbl_adet.AutoSize = true;
+            this.lbl_adet.Location = new System.Drawing.Point(6, 162);
+            this.lbl_adet.Name = "lbl_adet";
+            this.lbl_adet.Size = new System.Drawing.Size(58, 13);
+            this.lbl_adet.TabIndex = 3;
+            this.lbl_adet.Text = "Ürün Adet:";
+            // 
+            // lbl_giristarihi
+            // 
+            this.lbl_giristarihi.AutoSize = true;
+            this.lbl_giristarihi.Location = new System.Drawing.Point(7, 118);
+            this.lbl_giristarihi.Name = "lbl_giristarihi";
+            this.lbl_giristarihi.Size = new System.Drawing.Size(59, 13);
+            this.lbl_giristarihi.TabIndex = 2;
+            this.lbl_giristarihi.Text = "Giriş Tarihi:";
+            // 
+            // lbl_urunkodu
+            // 
+            this.lbl_urunkodu.AutoSize = true;
+            this.lbl_urunkodu.Location = new System.Drawing.Point(7, 76);
+            this.lbl_urunkodu.Name = "lbl_urunkodu";
+            this.lbl_urunkodu.Size = new System.Drawing.Size(61, 13);
+            this.lbl_urunkodu.TabIndex = 1;
+            this.lbl_urunkodu.Text = "Ürün Kodu:";
+            // 
+            // lbl_firmaadi
+            // 
+            this.lbl_firmaadi.AutoSize = true;
+            this.lbl_firmaadi.Location = new System.Drawing.Point(7, 37);
+            this.lbl_firmaadi.Name = "lbl_firmaadi";
+            this.lbl_firmaadi.Size = new System.Drawing.Size(53, 13);
+            this.lbl_firmaadi.TabIndex = 0;
+            this.lbl_firmaadi.Text = "Firma Adi:";
+            // 
             // grpbx_islem
             // 
             this.grpbx_islem.Controls.Add(this.btn_kaydet);
@@ -128,88 +212,15 @@
             this.grpbx_islem.TabStop = false;
             this.grpbx_islem.Text = "İslemler";
             // 
-            // lbl_firmaadi
+            // btn_kaydet
             // 
-            this.lbl_firmaadi.AutoSize = true;
-            this.lbl_firmaadi.Location = new System.Drawing.Point(7, 37);
-            this.lbl_firmaadi.Name = "lbl_firmaadi";
-            this.lbl_firmaadi.Size = new System.Drawing.Size(53, 13);
-            this.lbl_firmaadi.TabIndex = 0;
-            this.lbl_firmaadi.Text = "Firma Adi:";
-            // 
-            // lbl_urunkodu
-            // 
-            this.lbl_urunkodu.AutoSize = true;
-            this.lbl_urunkodu.Location = new System.Drawing.Point(7, 76);
-            this.lbl_urunkodu.Name = "lbl_urunkodu";
-            this.lbl_urunkodu.Size = new System.Drawing.Size(61, 13);
-            this.lbl_urunkodu.TabIndex = 1;
-            this.lbl_urunkodu.Text = "Ürün Kodu:";
-            // 
-            // lbl_giristarihi
-            // 
-            this.lbl_giristarihi.AutoSize = true;
-            this.lbl_giristarihi.Location = new System.Drawing.Point(7, 118);
-            this.lbl_giristarihi.Name = "lbl_giristarihi";
-            this.lbl_giristarihi.Size = new System.Drawing.Size(59, 13);
-            this.lbl_giristarihi.TabIndex = 2;
-            this.lbl_giristarihi.Text = "Giriş Tarihi:";
-            // 
-            // lbl_adet
-            // 
-            this.lbl_adet.AutoSize = true;
-            this.lbl_adet.Location = new System.Drawing.Point(6, 162);
-            this.lbl_adet.Name = "lbl_adet";
-            this.lbl_adet.Size = new System.Drawing.Size(58, 13);
-            this.lbl_adet.TabIndex = 3;
-            this.lbl_adet.Text = "Ürün Adet:";
-            // 
-            // lbl_islemm
-            // 
-            this.lbl_islemm.AutoSize = true;
-            this.lbl_islemm.Location = new System.Drawing.Point(7, 205);
-            this.lbl_islemm.Name = "lbl_islemm";
-            this.lbl_islemm.Size = new System.Drawing.Size(34, 13);
-            this.lbl_islemm.TabIndex = 4;
-            this.lbl_islemm.Text = "İşlem:";
-            // 
-            // cmbx_firmaadi
-            // 
-            this.cmbx_firmaadi.FormattingEnabled = true;
-            this.cmbx_firmaadi.Location = new System.Drawing.Point(96, 29);
-            this.cmbx_firmaadi.Name = "cmbx_firmaadi";
-            this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
-            this.cmbx_firmaadi.TabIndex = 5;
-            // 
-            // cmbx_urunadi
-            // 
-            this.cmbx_urunadi.FormattingEnabled = true;
-            this.cmbx_urunadi.Location = new System.Drawing.Point(96, 68);
-            this.cmbx_urunadi.Name = "cmbx_urunadi";
-            this.cmbx_urunadi.Size = new System.Drawing.Size(121, 21);
-            this.cmbx_urunadi.TabIndex = 6;
-            this.cmbx_urunadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_urunadi_SelectedIndexChanged);
-            // 
-            // txt_giristarihi
-            // 
-            this.txt_giristarihi.Location = new System.Drawing.Point(96, 111);
-            this.txt_giristarihi.Name = "txt_giristarihi";
-            this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
-            this.txt_giristarihi.TabIndex = 7;
-            // 
-            // txt_adet
-            // 
-            this.txt_adet.Location = new System.Drawing.Point(96, 155);
-            this.txt_adet.Name = "txt_adet";
-            this.txt_adet.Size = new System.Drawing.Size(121, 20);
-            this.txt_adet.TabIndex = 8;
-            // 
-            // txt_islem
-            // 
-            this.txt_islem.Location = new System.Drawing.Point(96, 198);
-            this.txt_islem.Name = "txt_islem";
-            this.txt_islem.Size = new System.Drawing.Size(121, 20);
-            this.txt_islem.TabIndex = 9;
+            this.btn_kaydet.Location = new System.Drawing.Point(211, 11);
+            this.btn_kaydet.Name = "btn_kaydet";
+            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
+            this.btn_kaydet.TabIndex = 1;
+            this.btn_kaydet.Text = "KAYDET";
+            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // btn_temizle
             // 
@@ -220,16 +231,6 @@
             this.btn_temizle.Text = "TEMİZLE";
             this.btn_temizle.UseVisualStyleBackColor = true;
             this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
-            // 
-            // btn_kaydet
-            // 
-            this.btn_kaydet.Location = new System.Drawing.Point(211, 11);
-            this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
-            this.btn_kaydet.TabIndex = 1;
-            this.btn_kaydet.Text = "KAYDET";
-            this.btn_kaydet.UseVisualStyleBackColor = true;
-            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // pctrbx_resim
             // 
@@ -249,17 +250,18 @@
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form7
             // 
+            this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 354);
@@ -268,6 +270,7 @@
             this.Controls.Add(this.grpbx_islem);
             this.Controls.Add(this.grpbx_bilgi);
             this.Controls.Add(this.menuStrip2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form7";
             this.Text = "ÜRETİM GİRİŞ";
             this.Load += new System.EventHandler(this.Form7_Load);

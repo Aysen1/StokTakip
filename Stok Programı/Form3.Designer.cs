@@ -88,6 +88,7 @@
             this.txt_urun_kodu.Name = "txt_urun_kodu";
             this.txt_urun_kodu.Size = new System.Drawing.Size(121, 20);
             this.txt_urun_kodu.TabIndex = 4;
+            this.txt_urun_kodu.TextChanged += new System.EventHandler(this.txt_urun_kodu_TextChanged);
             // 
             // cmbbx_firma_adi
             // 
@@ -274,6 +275,7 @@
             this.Controls.Add(this.grpbx_islemler);
             this.Controls.Add(this.grpbx_urunbilgileri);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form3";
             this.Text = "ÜRÜN KAYIT FORMU";
             this.Load += new System.EventHandler(this.Form3_Load);

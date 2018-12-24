@@ -164,6 +164,7 @@
             this.Controls.Add(this.btn_firma);
             this.Controls.Add(this.btn_urun);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form6";
             this.Text = "ANASAYFA";
