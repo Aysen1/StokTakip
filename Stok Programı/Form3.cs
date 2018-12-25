@@ -51,44 +51,15 @@ namespace Stok_Programı
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
 
-           if (cmbbx_firma_adi.Text != "" && txt_urun_kodu.Text != "")
-           {
-               urun_kayit();
-               /*baglanti.Open();
-               komut = new SqlCommand("select * from UrunKayit where UrunKodu=@id",baglanti);
-               komut.Parameters.AddWithValue("@id", txt_urun_kodu.Text);
-               dr = komut.ExecuteReader();
-               if (dr.Read())
-               {
-                   if (dr[2].ToString() != txt_urun_kodu.Text)
-                   {
-                     baglanti.Close();
-                     urun_kayit();
-                     /*FileStream fs =new FileStream(resimpath, FileMode.Open, FileAccess.Read);
-                     BinaryReader br = new BinaryReader(fs);
-                     byte[] resim=br.ReadBytes((int) fs.Length);
-                     br.Close();
-                     fs.Close();
-
-                     baglanti.Open();
-                     komut = new SqlCommand();
-                     komut.Connection = baglanti;    
-                     komut.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim,ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
-                     komut.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
-                     komut.ExecuteNonQuery();
-                     MessageBox.Show("başarılı.");
-                     baglanti.Close();*
-                   }
-                   else
-                   {
-                       baglanti.Close();
-                       MessageBox.Show("Bu kodda bir ürün bulunmaktadır.");
-                   }
-               }
-               */
-           }
-           else
-               MessageBox.Show("Lütfen Bilgileri Tam Giriniz.");
+            if (cmbbx_firma_adi.Text != "" && txt_urun_kodu.Text != "")
+            {
+                urun_kayit();         
+            }
+            else
+            {
+                baglanti.Close();
+                MessageBox.Show("Lütfen Bilgileri Tam Giriniz.");
+            }
           
         }
         private void urun_kayit()
@@ -105,7 +76,7 @@ namespace Stok_Programı
             komut2.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim, ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
             komut2.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
             komut2.ExecuteNonQuery();
-            MessageBox.Show("başarılı.");
+            MessageBox.Show("Başarılı.");
             baglanti.Close(); 
         }
 

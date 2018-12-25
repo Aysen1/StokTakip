@@ -50,11 +50,19 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_resim)).BeginInit();
             this.grpbx_islem.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -66,7 +74,7 @@
             this.yardımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(358, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,32 +106,28 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_adet);
-            this.groupBox1.Controls.Add(this.lbl_adet);
-            this.groupBox1.Controls.Add(this.txt_giristarihi);
-            this.groupBox1.Controls.Add(this.lbl_giristarihi);
-            this.groupBox1.Controls.Add(this.cmbx_urunadi);
-            this.groupBox1.Controls.Add(this.lbl_urunkodu);
-            this.groupBox1.Controls.Add(this.cmbx_firmaadi);
-            this.groupBox1.Controls.Add(this.lbl_firmaadi);
-            this.groupBox1.Location = new System.Drawing.Point(12, 42);
+            this.groupBox1.Controls.Add(this.tableLayoutPanel2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 241);
+            this.groupBox1.Size = new System.Drawing.Size(294, 296);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilgiler";
             // 
             // txt_adet
             // 
-            this.txt_adet.Location = new System.Drawing.Point(96, 192);
+            this.txt_adet.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txt_adet.Location = new System.Drawing.Point(164, 232);
             this.txt_adet.Name = "txt_adet";
             this.txt_adet.Size = new System.Drawing.Size(121, 20);
             this.txt_adet.TabIndex = 12;
             // 
             // lbl_adet
             // 
+            this.lbl_adet.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_adet.AutoSize = true;
-            this.lbl_adet.Location = new System.Drawing.Point(6, 199);
+            this.lbl_adet.Location = new System.Drawing.Point(39, 235);
             this.lbl_adet.Name = "lbl_adet";
             this.lbl_adet.Size = new System.Drawing.Size(58, 13);
             this.lbl_adet.TabIndex = 11;
@@ -131,15 +135,17 @@
             // 
             // txt_giristarihi
             // 
-            this.txt_giristarihi.Location = new System.Drawing.Point(96, 136);
+            this.txt_giristarihi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txt_giristarihi.Location = new System.Drawing.Point(164, 162);
             this.txt_giristarihi.Name = "txt_giristarihi";
             this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
             this.txt_giristarihi.TabIndex = 10;
             // 
             // lbl_giristarihi
             // 
+            this.lbl_giristarihi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_giristarihi.AutoSize = true;
-            this.lbl_giristarihi.Location = new System.Drawing.Point(7, 143);
+            this.lbl_giristarihi.Location = new System.Drawing.Point(39, 166);
             this.lbl_giristarihi.Name = "lbl_giristarihi";
             this.lbl_giristarihi.Size = new System.Drawing.Size(58, 13);
             this.lbl_giristarihi.TabIndex = 9;
@@ -147,8 +153,9 @@
             // 
             // cmbx_urunadi
             // 
+            this.cmbx_urunadi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cmbx_urunadi.FormattingEnabled = true;
-            this.cmbx_urunadi.Location = new System.Drawing.Point(96, 84);
+            this.cmbx_urunadi.Location = new System.Drawing.Point(164, 93);
             this.cmbx_urunadi.Name = "cmbx_urunadi";
             this.cmbx_urunadi.Size = new System.Drawing.Size(121, 21);
             this.cmbx_urunadi.TabIndex = 8;
@@ -156,8 +163,9 @@
             // 
             // lbl_urunkodu
             // 
+            this.lbl_urunkodu.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_urunkodu.AutoSize = true;
-            this.lbl_urunkodu.Location = new System.Drawing.Point(7, 92);
+            this.lbl_urunkodu.Location = new System.Drawing.Point(36, 97);
             this.lbl_urunkodu.Name = "lbl_urunkodu";
             this.lbl_urunkodu.Size = new System.Drawing.Size(61, 13);
             this.lbl_urunkodu.TabIndex = 7;
@@ -165,16 +173,18 @@
             // 
             // cmbx_firmaadi
             // 
+            this.cmbx_firmaadi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cmbx_firmaadi.FormattingEnabled = true;
-            this.cmbx_firmaadi.Location = new System.Drawing.Point(96, 29);
+            this.cmbx_firmaadi.Location = new System.Drawing.Point(164, 24);
             this.cmbx_firmaadi.Name = "cmbx_firmaadi";
             this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
             this.cmbx_firmaadi.TabIndex = 6;
             // 
             // lbl_firmaadi
             // 
+            this.lbl_firmaadi.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_firmaadi.AutoSize = true;
-            this.lbl_firmaadi.Location = new System.Drawing.Point(7, 37);
+            this.lbl_firmaadi.Location = new System.Drawing.Point(44, 28);
             this.lbl_firmaadi.Name = "lbl_firmaadi";
             this.lbl_firmaadi.Size = new System.Drawing.Size(53, 13);
             this.lbl_firmaadi.TabIndex = 1;
@@ -182,26 +192,29 @@
             // 
             // pctrbx_resim
             // 
-            this.pctrbx_resim.Location = new System.Drawing.Point(250, 108);
+            this.pctrbx_resim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pctrbx_resim.Location = new System.Drawing.Point(359, 101);
             this.pctrbx_resim.Name = "pctrbx_resim";
             this.pctrbx_resim.Size = new System.Drawing.Size(100, 100);
+            this.pctrbx_resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbx_resim.TabIndex = 2;
             this.pctrbx_resim.TabStop = false;
             // 
             // grpbx_islem
             // 
-            this.grpbx_islem.Controls.Add(this.btn_kaydet);
-            this.grpbx_islem.Controls.Add(this.btn_temizle);
-            this.grpbx_islem.Location = new System.Drawing.Point(12, 289);
+            this.grpbx_islem.Controls.Add(this.tableLayoutPanel4);
+            this.grpbx_islem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpbx_islem.Location = new System.Drawing.Point(3, 311);
             this.grpbx_islem.Name = "grpbx_islem";
-            this.grpbx_islem.Size = new System.Drawing.Size(346, 40);
+            this.grpbx_islem.Size = new System.Drawing.Size(518, 63);
             this.grpbx_islem.TabIndex = 2;
             this.grpbx_islem.TabStop = false;
             this.grpbx_islem.Text = "İşlem";
             // 
             // btn_kaydet
             // 
-            this.btn_kaydet.Location = new System.Drawing.Point(211, 11);
+            this.btn_kaydet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_kaydet.Location = new System.Drawing.Point(346, 10);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
             this.btn_kaydet.TabIndex = 1;
@@ -211,7 +224,8 @@
             // 
             // btn_temizle
             // 
-            this.btn_temizle.Location = new System.Drawing.Point(60, 11);
+            this.btn_temizle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_temizle.Location = new System.Drawing.Point(90, 10);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(75, 23);
             this.btn_temizle.TabIndex = 0;
@@ -227,9 +241,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 332);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 401);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(358, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(524, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -238,31 +252,102 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.93734F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.grpbx_islem, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 24);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.78808F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.21192F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(524, 377);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel2.Controls.Add(this.lbl_firmaadi, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txt_adet, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.cmbx_firmaadi, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_adet, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_urunkodu, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txt_giristarihi, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cmbx_urunadi, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_giristarihi, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(288, 277);
+            this.tableLayoutPanel2.TabIndex = 13;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pctrbx_resim, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(518, 302);
+            this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.btn_temizle, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btn_kaydet, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(512, 44);
+            this.tableLayoutPanel4.TabIndex = 5;
+            // 
             // Form5
             // 
             this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 354);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(524, 423);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.grpbx_islem);
-            this.Controls.Add(this.pctrbx_resim);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(435, 357);
             this.Name = "Form5";
             this.Text = "ÜRETİM ÇIKIŞ";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_resim)).EndInit();
             this.grpbx_islem.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +376,9 @@
         private System.Windows.Forms.TextBox txt_adet;
         private System.Windows.Forms.Label lbl_adet;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
     }
 }

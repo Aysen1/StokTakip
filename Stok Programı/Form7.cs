@@ -137,5 +137,10 @@ namespace Stok_Programı
                 urun_listele();
             }
         }
+
+        private void pctrbx_resim_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

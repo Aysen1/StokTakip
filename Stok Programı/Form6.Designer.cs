@@ -42,15 +42,18 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_urun
             // 
-            this.btn_urun.Location = new System.Drawing.Point(60, 47);
+            this.btn_urun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_urun.Location = new System.Drawing.Point(3, 7);
             this.btn_urun.Name = "btn_urun";
-            this.btn_urun.Size = new System.Drawing.Size(206, 45);
+            this.btn_urun.Size = new System.Drawing.Size(306, 45);
             this.btn_urun.TabIndex = 0;
             this.btn_urun.Text = "ÜRÜN KAYIT FORMU";
             this.btn_urun.UseVisualStyleBackColor = true;
@@ -58,9 +61,10 @@
             // 
             // btn_firma
             // 
-            this.btn_firma.Location = new System.Drawing.Point(60, 98);
+            this.btn_firma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_firma.Location = new System.Drawing.Point(3, 66);
             this.btn_firma.Name = "btn_firma";
-            this.btn_firma.Size = new System.Drawing.Size(206, 45);
+            this.btn_firma.Size = new System.Drawing.Size(306, 45);
             this.btn_firma.TabIndex = 1;
             this.btn_firma.Text = "FİRMA KAYIT FORMU";
             this.btn_firma.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@
             // 
             // btn_giris
             // 
-            this.btn_giris.Location = new System.Drawing.Point(60, 149);
+            this.btn_giris.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_giris.Location = new System.Drawing.Point(3, 125);
             this.btn_giris.Name = "btn_giris";
-            this.btn_giris.Size = new System.Drawing.Size(206, 45);
+            this.btn_giris.Size = new System.Drawing.Size(306, 45);
             this.btn_giris.TabIndex = 2;
             this.btn_giris.Text = "ÜRETİM GİRİŞ FORMU";
             this.btn_giris.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // btn_cikis
             // 
-            this.btn_cikis.Location = new System.Drawing.Point(60, 200);
+            this.btn_cikis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cikis.Location = new System.Drawing.Point(3, 184);
             this.btn_cikis.Name = "btn_cikis";
-            this.btn_cikis.Size = new System.Drawing.Size(206, 45);
+            this.btn_cikis.Size = new System.Drawing.Size(306, 45);
             this.btn_cikis.TabIndex = 3;
             this.btn_cikis.Text = "ÜRETİM ÇIKIŞ FORMU";
             this.btn_cikis.UseVisualStyleBackColor = true;
@@ -96,7 +102,7 @@
             this.cikisToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(337, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(312, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,9 +143,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 265);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 260);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(337, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(312, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -153,19 +159,35 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.btn_urun, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_firma, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_cikis, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_giris, 0, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 24);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 236);
+            this.tableLayoutPanel1.TabIndex = 6;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 287);
+            this.ClientSize = new System.Drawing.Size(312, 282);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.btn_cikis);
-            this.Controls.Add(this.btn_giris);
-            this.Controls.Add(this.btn_firma);
-            this.Controls.Add(this.btn_urun);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(328, 321);
             this.Name = "Form6";
             this.Text = "ANASAYFA";
             this.Load += new System.EventHandler(this.Form6_Load);
@@ -173,6 +195,7 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +216,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
