@@ -75,9 +75,9 @@ namespace Stok_Programı
 
         private void cikisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Dispose();
+            Form6 form6 = new Form6();
+            this.Close();
+            form6.Show();
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)

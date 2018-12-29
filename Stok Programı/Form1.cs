@@ -51,8 +51,23 @@ namespace Stok_Programı
         private void Form1_Load(object sender, EventArgs e)
         {
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
-            btn_0.BackColor = Color.Blue;
-            txt_versiyon.Text = Application.ProductVersion;
+            lbl_versiyon.Text = Application.ProductVersion;
+            lbl_versiyon.Text ="Versiyon "+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            lbl_nfm.Text = "NFM AJANS SAN. VE TIC. LTD. STI";
+            lbl_destek.Text = "Destek Hattı: 0 (236) 231 40 10";
+            btn_0.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton0.fw.png");
+            btn_1.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton1.fw.png");
+            btn_2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton2.fw.png");
+            btn_3.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton3.fw.png");
+            btn_4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton4.fw.png");
+            btn_5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton5.fw.png");
+            btn_6.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton6.fw.png");
+            btn_7.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton7.fw.png");
+            btn_8.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton8.fw.png");
+            btn_9.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\buton9.fw.png");
+            btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sil.fw.png");
+            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\giris.fw.png");
+            btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\iptal.fw.png");
         }
 
         private void btn_kapat_Click(object sender, EventArgs e)

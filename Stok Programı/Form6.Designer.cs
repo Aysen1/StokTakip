@@ -189,7 +189,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(328, 321);
             this.Name = "Form6";
-            this.Text = "ANASAYFA";
+            this.Text = "ANA İŞLEM PANELİ";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

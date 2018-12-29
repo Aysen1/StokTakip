@@ -76,6 +76,7 @@ namespace Stok_Programı
             txt_adet.Text = "";
             txt_giristarihi.Text = "";
             txt_islem.Text = "";
+            pctrbx_resim.Image = null;
         }
 
         private void cmbx_urunadi_SelectedIndexChanged(object sender, EventArgs e)
@@ -141,6 +142,13 @@ namespace Stok_Programı
         private void pctrbx_resim_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            this.Close();
+            form6.Show();
         }
     }
 }
