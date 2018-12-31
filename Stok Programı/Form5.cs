@@ -62,6 +62,7 @@ namespace Stok_Programı
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
             urun_listele();
+            pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\barkod.png");
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)

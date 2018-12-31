@@ -172,29 +172,31 @@
             // 
             // btn_kapat
             // 
+            this.btn_kapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_kapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_kapat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_kapat.FlatAppearance.BorderSize = 0;
             this.btn_kapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kapat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_kapat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_kapat.Location = new System.Drawing.Point(3, 3);
+            this.btn_kapat.Location = new System.Drawing.Point(5, 3);
             this.btn_kapat.Name = "btn_kapat";
-            this.btn_kapat.Size = new System.Drawing.Size(64, 30);
+            this.btn_kapat.Size = new System.Drawing.Size(93, 29);
             this.btn_kapat.TabIndex = 6;
             this.btn_kapat.UseVisualStyleBackColor = false;
             this.btn_kapat.Click += new System.EventHandler(this.btn_kapat_Click);
             // 
             // btn_giris
             // 
+            this.btn_giris.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_giris.BackColor = System.Drawing.Color.Green;
             this.btn_giris.FlatAppearance.BorderSize = 0;
             this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_giris.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_giris.Location = new System.Drawing.Point(73, 3);
+            this.btn_giris.Location = new System.Drawing.Point(105, 3);
             this.btn_giris.Name = "btn_giris";
-            this.btn_giris.Size = new System.Drawing.Size(65, 30);
+            this.btn_giris.Size = new System.Drawing.Size(93, 29);
             this.btn_giris.TabIndex = 4;
             this.btn_giris.UseVisualStyleBackColor = false;
             this.btn_giris.Click += new System.EventHandler(this.button1_Click);
@@ -222,10 +224,10 @@
             // 
             this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btn_6, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_5, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_4, 0, 1);
@@ -234,123 +236,131 @@
             this.tableLayoutPanel3.Controls.Add(this.btn_0, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_7, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_1, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(58, 93);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 93);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(146, 64);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(201, 64);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // btn_6
             // 
+            this.btn_6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_6.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_6.FlatAppearance.BorderSize = 0;
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_6.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_6.Location = new System.Drawing.Point(73, 38);
+            this.btn_6.Location = new System.Drawing.Point(105, 38);
             this.btn_6.Name = "btn_6";
-            this.btn_6.Size = new System.Drawing.Size(29, 29);
+            this.btn_6.Size = new System.Drawing.Size(42, 29);
             this.btn_6.TabIndex = 6;
             this.btn_6.UseVisualStyleBackColor = false;
             this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // btn_5
             // 
+            this.btn_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_5.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_5.FlatAppearance.BorderSize = 0;
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_5.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_5.Location = new System.Drawing.Point(38, 38);
+            this.btn_5.Location = new System.Drawing.Point(55, 38);
             this.btn_5.Name = "btn_5";
-            this.btn_5.Size = new System.Drawing.Size(29, 29);
+            this.btn_5.Size = new System.Drawing.Size(42, 29);
             this.btn_5.TabIndex = 5;
             this.btn_5.UseVisualStyleBackColor = false;
             this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
             // 
             // btn_4
             // 
+            this.btn_4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_4.FlatAppearance.BorderSize = 0;
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_4.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_4.Location = new System.Drawing.Point(3, 38);
+            this.btn_4.Location = new System.Drawing.Point(5, 38);
             this.btn_4.Name = "btn_4";
-            this.btn_4.Size = new System.Drawing.Size(29, 29);
+            this.btn_4.Size = new System.Drawing.Size(42, 29);
             this.btn_4.TabIndex = 4;
             this.btn_4.UseVisualStyleBackColor = false;
             this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_3
             // 
+            this.btn_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_3.FlatAppearance.BorderSize = 0;
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_3.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_3.Location = new System.Drawing.Point(108, 3);
+            this.btn_3.Location = new System.Drawing.Point(156, 3);
             this.btn_3.Name = "btn_3";
-            this.btn_3.Size = new System.Drawing.Size(30, 29);
+            this.btn_3.Size = new System.Drawing.Size(42, 29);
             this.btn_3.TabIndex = 3;
             this.btn_3.UseVisualStyleBackColor = false;
             this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // btn_2
             // 
+            this.btn_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_2.FlatAppearance.BorderSize = 0;
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_2.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_2.Location = new System.Drawing.Point(73, 3);
+            this.btn_2.Location = new System.Drawing.Point(105, 3);
             this.btn_2.Name = "btn_2";
-            this.btn_2.Size = new System.Drawing.Size(29, 29);
+            this.btn_2.Size = new System.Drawing.Size(42, 29);
             this.btn_2.TabIndex = 2;
             this.btn_2.UseVisualStyleBackColor = false;
             this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
             // 
             // btn_0
             // 
+            this.btn_0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_0.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_0.FlatAppearance.BorderSize = 0;
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_0.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_0.Location = new System.Drawing.Point(3, 3);
+            this.btn_0.Location = new System.Drawing.Point(5, 3);
             this.btn_0.Name = "btn_0";
-            this.btn_0.Size = new System.Drawing.Size(29, 29);
+            this.btn_0.Size = new System.Drawing.Size(42, 29);
             this.btn_0.TabIndex = 0;
             this.btn_0.UseVisualStyleBackColor = false;
             this.btn_0.Click += new System.EventHandler(this.btn_0_Click);
             // 
             // btn_7
             // 
+            this.btn_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_7.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_7.FlatAppearance.BorderSize = 0;
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_7.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_7.Location = new System.Drawing.Point(108, 38);
+            this.btn_7.Location = new System.Drawing.Point(156, 38);
             this.btn_7.Name = "btn_7";
-            this.btn_7.Size = new System.Drawing.Size(30, 29);
+            this.btn_7.Size = new System.Drawing.Size(42, 29);
             this.btn_7.TabIndex = 7;
             this.btn_7.UseVisualStyleBackColor = false;
             this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
             // 
             // btn_1
             // 
+            this.btn_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_1.FlatAppearance.BorderSize = 0;
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_1.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_1.Location = new System.Drawing.Point(38, 3);
+            this.btn_1.Location = new System.Drawing.Point(55, 3);
             this.btn_1.Name = "btn_1";
-            this.btn_1.Size = new System.Drawing.Size(29, 29);
+            this.btn_1.Size = new System.Drawing.Size(42, 29);
             this.btn_1.TabIndex = 1;
             this.btn_1.UseVisualStyleBackColor = false;
             this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
@@ -359,15 +369,15 @@
             // 
             this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel5.Controls.Add(this.btn_kapat, 0, 0);
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel5.Controls.Add(this.btn_giris, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(58, 198);
+            this.tableLayoutPanel5.Controls.Add(this.btn_kapat, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 198);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(146, 39);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(201, 39);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
             // tableLayoutPanel4
@@ -375,17 +385,17 @@
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.LightGray;
             this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel4.Controls.Add(this.btn_9, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_8, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_sil, 2, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(58, 163);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 163);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(146, 29);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(201, 29);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // btn_9
@@ -396,38 +406,39 @@
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_9.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_9.Location = new System.Drawing.Point(38, 3);
+            this.btn_9.Location = new System.Drawing.Point(55, 3);
             this.btn_9.Name = "btn_9";
-            this.btn_9.Size = new System.Drawing.Size(29, 30);
+            this.btn_9.Size = new System.Drawing.Size(42, 29);
             this.btn_9.TabIndex = 9;
             this.btn_9.UseVisualStyleBackColor = false;
             this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
             // 
             // btn_8
             // 
-            this.btn_8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_8.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_8.FlatAppearance.BorderSize = 0;
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_8.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_8.Location = new System.Drawing.Point(3, 3);
+            this.btn_8.Location = new System.Drawing.Point(5, 3);
             this.btn_8.Name = "btn_8";
-            this.btn_8.Size = new System.Drawing.Size(29, 30);
+            this.btn_8.Size = new System.Drawing.Size(42, 29);
             this.btn_8.TabIndex = 8;
             this.btn_8.UseVisualStyleBackColor = false;
             this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_sil
             // 
+            this.btn_sil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_sil.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_sil.FlatAppearance.BorderSize = 0;
             this.btn_sil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_sil.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_sil.Location = new System.Drawing.Point(73, 3);
+            this.btn_sil.Location = new System.Drawing.Point(105, 3);
             this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(65, 30);
+            this.btn_sil.Size = new System.Drawing.Size(93, 29);
             this.btn_sil.TabIndex = 10;
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);

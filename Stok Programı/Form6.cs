@@ -22,6 +22,14 @@ namespace Stok_Programı
         {
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
+            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\urungiris.png");
+            btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\urunckis.png");
+            btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
+            btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
+            btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
+            btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\firmakayit.png");
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo.jpeg");
+            menuStrip1.Visible = false;
         }
 
         private void btn_urun_Click(object sender, EventArgs e)
