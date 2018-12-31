@@ -47,7 +47,6 @@ namespace Stok_Programı
             else
                 lbl_hatali_giris.Text = "Girilen Bilgiler Hatalıdır!Tekrar Deneyiniz.";*/
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
@@ -68,6 +67,7 @@ namespace Stok_Programı
             btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sil.fw.png");
             btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\giris.fw.png");
             btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\iptal.fw.png");
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo1.png");
         }
 
         private void btn_kapat_Click(object sender, EventArgs e)
