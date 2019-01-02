@@ -122,7 +122,7 @@
             this.grpbx_bilgi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbx_bilgi.Location = new System.Drawing.Point(3, 3);
             this.grpbx_bilgi.Name = "grpbx_bilgi";
-            this.grpbx_bilgi.Size = new System.Drawing.Size(344, 298);
+            this.grpbx_bilgi.Size = new System.Drawing.Size(344, 295);
             this.grpbx_bilgi.TabIndex = 2;
             this.grpbx_bilgi.TabStop = false;
             // 
@@ -150,7 +150,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(338, 279);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(338, 276);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // lbl_islemm
@@ -158,7 +158,7 @@
             this.lbl_islemm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_islemm.AutoSize = true;
             this.lbl_islemm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_islemm.Location = new System.Drawing.Point(3, 243);
+            this.lbl_islemm.Location = new System.Drawing.Point(3, 241);
             this.lbl_islemm.Name = "lbl_islemm";
             this.lbl_islemm.Size = new System.Drawing.Size(163, 13);
             this.lbl_islemm.TabIndex = 4;
@@ -168,7 +168,7 @@
             // 
             this.txt_islem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_islem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_islem.Location = new System.Drawing.Point(172, 239);
+            this.txt_islem.Location = new System.Drawing.Point(172, 238);
             this.txt_islem.Name = "txt_islem";
             this.txt_islem.Size = new System.Drawing.Size(163, 20);
             this.txt_islem.TabIndex = 9;
@@ -261,7 +261,7 @@
             // 
             this.grpbx_islem.Controls.Add(this.tableLayoutPanel2);
             this.grpbx_islem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpbx_islem.Location = new System.Drawing.Point(3, 313);
+            this.grpbx_islem.Location = new System.Drawing.Point(3, 310);
             this.grpbx_islem.Name = "grpbx_islem";
             this.grpbx_islem.Size = new System.Drawing.Size(467, 66);
             this.grpbx_islem.TabIndex = 3;
@@ -309,7 +309,7 @@
             // pctrbx_resim
             // 
             this.pctrbx_resim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pctrbx_resim.Location = new System.Drawing.Point(358, 102);
+            this.pctrbx_resim.Location = new System.Drawing.Point(358, 100);
             this.pctrbx_resim.Name = "pctrbx_resim";
             this.pctrbx_resim.Size = new System.Drawing.Size(100, 100);
             this.pctrbx_resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -339,17 +339,17 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.grpbx_islem, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.15501F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.84498F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(473, 382);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(473, 379);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // tableLayoutPanel4
@@ -364,7 +364,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(467, 304);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(467, 301);
             this.tableLayoutPanel4.TabIndex = 4;
             this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 

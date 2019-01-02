@@ -80,7 +80,7 @@
             this.grpbx_firmabilgi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbx_firmabilgi.Location = new System.Drawing.Point(3, 3);
             this.grpbx_firmabilgi.Name = "grpbx_firmabilgi";
-            this.grpbx_firmabilgi.Size = new System.Drawing.Size(335, 414);
+            this.grpbx_firmabilgi.Size = new System.Drawing.Size(335, 411);
             this.grpbx_firmabilgi.TabIndex = 0;
             this.grpbx_firmabilgi.TabStop = false;
             // 
@@ -123,7 +123,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(329, 395);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(329, 392);
             this.tableLayoutPanel1.TabIndex = 4;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -131,7 +131,7 @@
             // 
             this.txt_kayit_tarihi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_kayit_tarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_kayit_tarihi.Location = new System.Drawing.Point(167, 363);
+            this.txt_kayit_tarihi.Location = new System.Drawing.Point(167, 361);
             this.txt_kayit_tarihi.Name = "txt_kayit_tarihi";
             this.txt_kayit_tarihi.Size = new System.Drawing.Size(159, 20);
             this.txt_kayit_tarihi.TabIndex = 21;
@@ -208,7 +208,7 @@
             this.lbl_kayit_tarihi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_kayit_tarihi.AutoSize = true;
             this.lbl_kayit_tarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_kayit_tarihi.Location = new System.Drawing.Point(3, 366);
+            this.lbl_kayit_tarihi.Location = new System.Drawing.Point(3, 365);
             this.lbl_kayit_tarihi.Name = "lbl_kayit_tarihi";
             this.lbl_kayit_tarihi.Size = new System.Drawing.Size(158, 13);
             this.lbl_kayit_tarihi.TabIndex = 20;
@@ -352,7 +352,7 @@
             // 
             this.grpbx_islem.Controls.Add(this.tableLayoutPanel3);
             this.grpbx_islem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpbx_islem.Location = new System.Drawing.Point(3, 423);
+            this.grpbx_islem.Location = new System.Drawing.Point(3, 420);
             this.grpbx_islem.Name = "grpbx_islem";
             this.grpbx_islem.Size = new System.Drawing.Size(335, 65);
             this.grpbx_islem.TabIndex = 1;
@@ -468,17 +468,17 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.grpbx_islem, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.grpbx_firmabilgi, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.55859F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.44142F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(341, 491);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(341, 488);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // Form4

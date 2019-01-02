@@ -13,3 +13,4 @@ C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Progr
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.csproj.GenerateResource.Cache
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.exe
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.pdb
+C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok Programı.csproj.ResolveComReference.cache

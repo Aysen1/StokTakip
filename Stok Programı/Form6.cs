@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+using System.Data.SqlClient;
+using System.IO;
 
 
 namespace Stok_Programı
@@ -29,6 +32,7 @@ namespace Stok_Programı
             btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
             btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\firmakayit.png");
             pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo.jpeg");
+            btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\araclar.png");
             menuStrip1.Visible = false;
         }
 
@@ -82,6 +86,49 @@ namespace Stok_Programı
         {
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             timer1.Start();
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_araclar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_stok_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
+            baglanti.Open();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from UrunKayit", baglanti);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            string data = null;
+
+            object misvalue = System.Reflection.Missing.Value;
+            Microsoft.Office.Interop.Excel.Application xl = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel.Workbook wb = default(Microsoft.Office.Interop.Excel.Workbook);
+            wb = xl.Workbooks.Add(misvalue);
+            Microsoft.Office.Interop.Excel.Worksheet ws = default(Microsoft.Office.Interop.Excel.Worksheet);
+            ws = wb.Worksheets.get_Item(1);
+            ws.Cells[1, 1].Value = "UrunID";
+            ws.Cells[1, 2].Value = "FirmaAdi";
+            ws.Cells[1, 3].Value = "UrunKodu";
+            ws.Cells[1, 4].Value = "KayitTarihi";
+            ws.Cells[1, 5].Value = "UrunResim";
+            ws.Cells[1, 6].Value = "ToplamAdet";
+            for (int i = 2; i <= ds.Tables[0].Rows.Count +1; i++)
+            {
+                for (int j = 2; j <= ds.Tables[0].Columns.Count+1 ; j++)
+                {
+                    data = ds.Tables[0].Rows[i-2].ItemArray[j-2].ToString();
+                    ws.Cells[i , j -1] = data;
+                }
+            }
+            baglanti.Close();
+            xl.Visible = true;
         }
     }
 }
