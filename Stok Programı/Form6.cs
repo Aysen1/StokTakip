@@ -107,24 +107,26 @@ namespace Stok_Programı
             da.Fill(ds);
             string data = null;
 
-            object misvalue = System.Reflection.Missing.Value;
+            //object misvalue = System.Reflection.Missing.Value;
             Microsoft.Office.Interop.Excel.Application xl = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel.Workbook wb = default(Microsoft.Office.Interop.Excel.Workbook);
-            wb = xl.Workbooks.Add(misvalue);
+            wb = xl.Workbooks.Add(@"C:\\Users\\NFM-1PC\\Documents\\Urun Kayit.xls");
             Microsoft.Office.Interop.Excel.Worksheet ws = default(Microsoft.Office.Interop.Excel.Worksheet);
             ws = wb.Worksheets.get_Item(1);
-            ws.Cells[1, 1].Value = "UrunID";
-            ws.Cells[1, 2].Value = "FirmaAdi";
-            ws.Cells[1, 3].Value = "UrunKodu";
-            ws.Cells[1, 4].Value = "KayitTarihi";
-            ws.Cells[1, 5].Value = "UrunResim";
-            ws.Cells[1, 6].Value = "ToplamAdet";
+          //  ws.Cells[1, 1].Value = "UrunID";
+            //ws.Cells[1, 2].Value = "FirmaAdi";
+           // ws.Cells[1, 3].Value = "UrunKodu";
+          //  ws.Cells[1, 4].Value = "KayitTarihi";
+          //  ws.Cells[1, 5].Value = "UrunResim";
+          //  ws.Cells[1, 6].Value = "ToplamAdet";
+
             for (int i = 2; i <= ds.Tables[0].Rows.Count +1; i++)
             {
                 for (int j = 2; j <= ds.Tables[0].Columns.Count+1 ; j++)
                 {
                     data = ds.Tables[0].Rows[i-2].ItemArray[j-2].ToString();
                     ws.Cells[i , j -1] = data;
+                    ws.Cells[i, j - 1].ColumnWidth = 20;
                 }
             }
             baglanti.Close();
