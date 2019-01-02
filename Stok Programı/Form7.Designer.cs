@@ -70,6 +70,7 @@
             // 
             // menuStrip2
             // 
+            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.ürünListesiToolStripMenuItem,
@@ -85,20 +86,20 @@
             // anasayfaToolStripMenuItem
             // 
             this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
-            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
             this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
             // ürünListesiToolStripMenuItem
             // 
             this.ürünListesiToolStripMenuItem.Name = "ürünListesiToolStripMenuItem";
-            this.ürünListesiToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.ürünListesiToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.ürünListesiToolStripMenuItem.Text = "Ürün Listesi";
             // 
             // stokRaporuToolStripMenuItem
             // 
             this.stokRaporuToolStripMenuItem.Name = "stokRaporuToolStripMenuItem";
-            this.stokRaporuToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.stokRaporuToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.stokRaporuToolStripMenuItem.Text = "Stok Raporu";
             // 
             // yardımToolStripMenuItem
@@ -121,10 +122,9 @@
             this.grpbx_bilgi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbx_bilgi.Location = new System.Drawing.Point(3, 3);
             this.grpbx_bilgi.Name = "grpbx_bilgi";
-            this.grpbx_bilgi.Size = new System.Drawing.Size(344, 226);
+            this.grpbx_bilgi.Size = new System.Drawing.Size(344, 298);
             this.grpbx_bilgi.TabIndex = 2;
             this.grpbx_bilgi.TabStop = false;
-            this.grpbx_bilgi.Text = "Bilgiler";
             // 
             // tableLayoutPanel1
             // 
@@ -150,14 +150,15 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(338, 207);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(338, 279);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // lbl_islemm
             // 
             this.lbl_islemm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_islemm.AutoSize = true;
-            this.lbl_islemm.Location = new System.Drawing.Point(3, 179);
+            this.lbl_islemm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_islemm.Location = new System.Drawing.Point(3, 243);
             this.lbl_islemm.Name = "lbl_islemm";
             this.lbl_islemm.Size = new System.Drawing.Size(163, 13);
             this.lbl_islemm.TabIndex = 4;
@@ -166,7 +167,8 @@
             // txt_islem
             // 
             this.txt_islem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_islem.Location = new System.Drawing.Point(172, 175);
+            this.txt_islem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_islem.Location = new System.Drawing.Point(172, 239);
             this.txt_islem.Name = "txt_islem";
             this.txt_islem.Size = new System.Drawing.Size(163, 20);
             this.txt_islem.TabIndex = 9;
@@ -175,7 +177,8 @@
             // 
             this.lbl_firmaadi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_firmaadi.AutoSize = true;
-            this.lbl_firmaadi.Location = new System.Drawing.Point(3, 14);
+            this.lbl_firmaadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_firmaadi.Location = new System.Drawing.Point(3, 21);
             this.lbl_firmaadi.Name = "lbl_firmaadi";
             this.lbl_firmaadi.Size = new System.Drawing.Size(163, 13);
             this.lbl_firmaadi.TabIndex = 0;
@@ -184,7 +187,8 @@
             // txt_adet
             // 
             this.txt_adet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_adet.Location = new System.Drawing.Point(172, 133);
+            this.txt_adet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_adet.Location = new System.Drawing.Point(172, 182);
             this.txt_adet.Name = "txt_adet";
             this.txt_adet.Size = new System.Drawing.Size(163, 20);
             this.txt_adet.TabIndex = 8;
@@ -192,8 +196,9 @@
             // cmbx_firmaadi
             // 
             this.cmbx_firmaadi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_firmaadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbx_firmaadi.FormattingEnabled = true;
-            this.cmbx_firmaadi.Location = new System.Drawing.Point(172, 10);
+            this.cmbx_firmaadi.Location = new System.Drawing.Point(172, 17);
             this.cmbx_firmaadi.Name = "cmbx_firmaadi";
             this.cmbx_firmaadi.Size = new System.Drawing.Size(163, 21);
             this.cmbx_firmaadi.TabIndex = 5;
@@ -202,7 +207,8 @@
             // txt_giristarihi
             // 
             this.txt_giristarihi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_giristarihi.Location = new System.Drawing.Point(172, 92);
+            this.txt_giristarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_giristarihi.Location = new System.Drawing.Point(172, 127);
             this.txt_giristarihi.Name = "txt_giristarihi";
             this.txt_giristarihi.Size = new System.Drawing.Size(163, 20);
             this.txt_giristarihi.TabIndex = 7;
@@ -211,7 +217,8 @@
             // 
             this.lbl_adet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_adet.AutoSize = true;
-            this.lbl_adet.Location = new System.Drawing.Point(3, 137);
+            this.lbl_adet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_adet.Location = new System.Drawing.Point(3, 186);
             this.lbl_adet.Name = "lbl_adet";
             this.lbl_adet.Size = new System.Drawing.Size(163, 13);
             this.lbl_adet.TabIndex = 3;
@@ -220,8 +227,9 @@
             // cmbx_urunadi
             // 
             this.cmbx_urunadi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbx_urunadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbx_urunadi.FormattingEnabled = true;
-            this.cmbx_urunadi.Location = new System.Drawing.Point(172, 51);
+            this.cmbx_urunadi.Location = new System.Drawing.Point(172, 72);
             this.cmbx_urunadi.Name = "cmbx_urunadi";
             this.cmbx_urunadi.Size = new System.Drawing.Size(163, 21);
             this.cmbx_urunadi.TabIndex = 6;
@@ -231,7 +239,8 @@
             // 
             this.lbl_giristarihi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_giristarihi.AutoSize = true;
-            this.lbl_giristarihi.Location = new System.Drawing.Point(3, 96);
+            this.lbl_giristarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_giristarihi.Location = new System.Drawing.Point(3, 131);
             this.lbl_giristarihi.Name = "lbl_giristarihi";
             this.lbl_giristarihi.Size = new System.Drawing.Size(163, 13);
             this.lbl_giristarihi.TabIndex = 2;
@@ -241,7 +250,8 @@
             // 
             this.lbl_urunkodu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_urunkodu.AutoSize = true;
-            this.lbl_urunkodu.Location = new System.Drawing.Point(3, 55);
+            this.lbl_urunkodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_urunkodu.Location = new System.Drawing.Point(3, 76);
             this.lbl_urunkodu.Name = "lbl_urunkodu";
             this.lbl_urunkodu.Size = new System.Drawing.Size(163, 13);
             this.lbl_urunkodu.TabIndex = 1;
@@ -251,12 +261,11 @@
             // 
             this.grpbx_islem.Controls.Add(this.tableLayoutPanel2);
             this.grpbx_islem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpbx_islem.Location = new System.Drawing.Point(3, 241);
+            this.grpbx_islem.Location = new System.Drawing.Point(3, 313);
             this.grpbx_islem.Name = "grpbx_islem";
-            this.grpbx_islem.Size = new System.Drawing.Size(467, 50);
+            this.grpbx_islem.Size = new System.Drawing.Size(467, 66);
             this.grpbx_islem.TabIndex = 3;
             this.grpbx_islem.TabStop = false;
-            this.grpbx_islem.Text = "İslemler";
             // 
             // tableLayoutPanel2
             // 
@@ -270,35 +279,37 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(461, 31);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(461, 47);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // btn_kaydet
             // 
             this.btn_kaydet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_kaydet.Location = new System.Drawing.Point(308, 4);
+            this.btn_kaydet.FlatAppearance.BorderSize = 0;
+            this.btn_kaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kaydet.Location = new System.Drawing.Point(308, 3);
             this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
+            this.btn_kaydet.Size = new System.Drawing.Size(75, 40);
             this.btn_kaydet.TabIndex = 1;
-            this.btn_kaydet.Text = "KAYDET";
             this.btn_kaydet.UseVisualStyleBackColor = true;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // btn_temizle
             // 
             this.btn_temizle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_temizle.Location = new System.Drawing.Point(77, 4);
+            this.btn_temizle.FlatAppearance.BorderSize = 0;
+            this.btn_temizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_temizle.Location = new System.Drawing.Point(77, 3);
             this.btn_temizle.Name = "btn_temizle";
-            this.btn_temizle.Size = new System.Drawing.Size(75, 23);
+            this.btn_temizle.Size = new System.Drawing.Size(75, 40);
             this.btn_temizle.TabIndex = 0;
-            this.btn_temizle.Text = "TEMİZLE";
             this.btn_temizle.UseVisualStyleBackColor = true;
             this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
             // pctrbx_resim
             // 
             this.pctrbx_resim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pctrbx_resim.Location = new System.Drawing.Point(358, 66);
+            this.pctrbx_resim.Location = new System.Drawing.Point(358, 102);
             this.pctrbx_resim.Name = "pctrbx_resim";
             this.pctrbx_resim.Size = new System.Drawing.Size(100, 100);
             this.pctrbx_resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -308,9 +319,10 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 318);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 406);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(473, 22);
             this.statusStrip1.TabIndex = 5;
@@ -337,7 +349,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.15501F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.84498F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(473, 294);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(473, 382);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // tableLayoutPanel4
@@ -352,7 +364,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(467, 232);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(467, 304);
             this.tableLayoutPanel4.TabIndex = 4;
             this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
@@ -361,11 +373,11 @@
             this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 340);
+            this.ClientSize = new System.Drawing.Size(473, 428);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
-            this.MinimumSize = new System.Drawing.Size(489, 379);
+            this.MinimumSize = new System.Drawing.Size(489, 467);
             this.Name = "Form7";
             this.Text = "ÜRETİM GİRİŞ";
             this.Load += new System.EventHandler(this.Form7_Load);

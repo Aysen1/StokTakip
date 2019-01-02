@@ -26,6 +26,8 @@ namespace Stok_Programı
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
+            btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
+            btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             il_listele();
             //ilce_listele();
         }

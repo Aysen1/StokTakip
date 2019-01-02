@@ -22,7 +22,7 @@ namespace Stok_Programı
         {
             InitializeComponent();
         }
-
+        
         private void Form3_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -30,6 +30,10 @@ namespace Stok_Programı
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
             pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\barkod.png");
+            btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
+            btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+            btn_resim_yukle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\yukle.fw.png");
+            btn_resim_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sill.fw.png");
         }
         private void firma_listele()
         {

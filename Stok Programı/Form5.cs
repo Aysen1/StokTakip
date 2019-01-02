@@ -63,6 +63,8 @@ namespace Stok_Programı
             firma_listele();
             urun_listele();
             pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\barkod.png");
+            btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
+            btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
