@@ -58,9 +58,9 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_simge = new System.Windows.Forms.Button();
-            this.btn_tamekran = new System.Windows.Forms.Button();
             this.btn_cikiss = new System.Windows.Forms.Button();
+            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.btn_simge = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.grpbx_bilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -156,7 +156,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(338, 276);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.tableLayoutPanel1.TabIndex = 16;
             // 
             // lbl_islemm
             // 
@@ -166,7 +166,7 @@
             this.lbl_islemm.Location = new System.Drawing.Point(3, 241);
             this.lbl_islemm.Name = "lbl_islemm";
             this.lbl_islemm.Size = new System.Drawing.Size(163, 13);
-            this.lbl_islemm.TabIndex = 4;
+            this.lbl_islemm.TabIndex = 7;
             this.lbl_islemm.Text = "İşlem:";
             // 
             // txt_islem
@@ -176,7 +176,7 @@
             this.txt_islem.Location = new System.Drawing.Point(172, 238);
             this.txt_islem.Name = "txt_islem";
             this.txt_islem.Size = new System.Drawing.Size(163, 20);
-            this.txt_islem.TabIndex = 9;
+            this.txt_islem.TabIndex = 4;
             // 
             // lbl_firmaadi
             // 
@@ -186,7 +186,7 @@
             this.lbl_firmaadi.Location = new System.Drawing.Point(3, 21);
             this.lbl_firmaadi.Name = "lbl_firmaadi";
             this.lbl_firmaadi.Size = new System.Drawing.Size(163, 13);
-            this.lbl_firmaadi.TabIndex = 0;
+            this.lbl_firmaadi.TabIndex = 11;
             this.lbl_firmaadi.Text = "Firma Adi:";
             // 
             // txt_adet
@@ -196,7 +196,7 @@
             this.txt_adet.Location = new System.Drawing.Point(172, 182);
             this.txt_adet.Name = "txt_adet";
             this.txt_adet.Size = new System.Drawing.Size(163, 20);
-            this.txt_adet.TabIndex = 8;
+            this.txt_adet.TabIndex = 3;
             // 
             // cmbx_firmaadi
             // 
@@ -206,7 +206,7 @@
             this.cmbx_firmaadi.Location = new System.Drawing.Point(172, 17);
             this.cmbx_firmaadi.Name = "cmbx_firmaadi";
             this.cmbx_firmaadi.Size = new System.Drawing.Size(163, 21);
-            this.cmbx_firmaadi.TabIndex = 5;
+            this.cmbx_firmaadi.TabIndex = 0;
             this.cmbx_firmaadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_firmaadi_SelectedIndexChanged);
             // 
             // txt_giristarihi
@@ -216,7 +216,7 @@
             this.txt_giristarihi.Location = new System.Drawing.Point(172, 127);
             this.txt_giristarihi.Name = "txt_giristarihi";
             this.txt_giristarihi.Size = new System.Drawing.Size(163, 20);
-            this.txt_giristarihi.TabIndex = 7;
+            this.txt_giristarihi.TabIndex = 2;
             // 
             // lbl_adet
             // 
@@ -226,7 +226,7 @@
             this.lbl_adet.Location = new System.Drawing.Point(3, 186);
             this.lbl_adet.Name = "lbl_adet";
             this.lbl_adet.Size = new System.Drawing.Size(163, 13);
-            this.lbl_adet.TabIndex = 3;
+            this.lbl_adet.TabIndex = 8;
             this.lbl_adet.Text = "Ürün Adet:";
             // 
             // cmbx_urunadi
@@ -237,7 +237,7 @@
             this.cmbx_urunadi.Location = new System.Drawing.Point(172, 72);
             this.cmbx_urunadi.Name = "cmbx_urunadi";
             this.cmbx_urunadi.Size = new System.Drawing.Size(163, 21);
-            this.cmbx_urunadi.TabIndex = 6;
+            this.cmbx_urunadi.TabIndex = 1;
             this.cmbx_urunadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_urunadi_SelectedIndexChanged);
             // 
             // lbl_giristarihi
@@ -248,7 +248,7 @@
             this.lbl_giristarihi.Location = new System.Drawing.Point(3, 131);
             this.lbl_giristarihi.Name = "lbl_giristarihi";
             this.lbl_giristarihi.Size = new System.Drawing.Size(163, 13);
-            this.lbl_giristarihi.TabIndex = 2;
+            this.lbl_giristarihi.TabIndex = 9;
             this.lbl_giristarihi.Text = "Giriş Tarihi:";
             // 
             // lbl_urunkodu
@@ -259,7 +259,7 @@
             this.lbl_urunkodu.Location = new System.Drawing.Point(3, 76);
             this.lbl_urunkodu.Name = "lbl_urunkodu";
             this.lbl_urunkodu.Size = new System.Drawing.Size(163, 13);
-            this.lbl_urunkodu.TabIndex = 1;
+            this.lbl_urunkodu.TabIndex = 10;
             this.lbl_urunkodu.Text = "Ürün Kodu:";
             // 
             // grpbx_islem
@@ -269,7 +269,7 @@
             this.grpbx_islem.Location = new System.Drawing.Point(3, 310);
             this.grpbx_islem.Name = "grpbx_islem";
             this.grpbx_islem.Size = new System.Drawing.Size(467, 66);
-            this.grpbx_islem.TabIndex = 3;
+            this.grpbx_islem.TabIndex = 18;
             this.grpbx_islem.TabStop = false;
             // 
             // tableLayoutPanel2
@@ -285,7 +285,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(461, 47);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanel2.TabIndex = 17;
             // 
             // btn_kaydet
             // 
@@ -295,7 +295,7 @@
             this.btn_kaydet.Location = new System.Drawing.Point(308, 3);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(75, 40);
-            this.btn_kaydet.TabIndex = 1;
+            this.btn_kaydet.TabIndex = 6;
             this.btn_kaydet.UseVisualStyleBackColor = true;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
@@ -307,7 +307,7 @@
             this.btn_temizle.Location = new System.Drawing.Point(77, 3);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(75, 40);
-            this.btn_temizle.TabIndex = 0;
+            this.btn_temizle.TabIndex = 5;
             this.btn_temizle.UseVisualStyleBackColor = true;
             this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
@@ -320,7 +320,6 @@
             this.pctrbx_resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrbx_resim.TabIndex = 4;
             this.pctrbx_resim.TabStop = false;
-            this.pctrbx_resim.Click += new System.EventHandler(this.pctrbx_resim_Click);
             // 
             // statusStrip1
             // 
@@ -370,8 +369,7 @@
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(467, 301);
-            this.tableLayoutPanel4.TabIndex = 4;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
+            this.tableLayoutPanel4.TabIndex = 15;
             // 
             // tableLayoutPanel5
             // 
@@ -388,31 +386,7 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(138, 41);
-            this.tableLayoutPanel5.TabIndex = 7;
-            // 
-            // btn_simge
-            // 
-            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_simge.FlatAppearance.BorderSize = 0;
-            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simge.Location = new System.Drawing.Point(8, 8);
-            this.btn_simge.Name = "btn_simge";
-            this.btn_simge.Size = new System.Drawing.Size(30, 30);
-            this.btn_simge.TabIndex = 8;
-            this.btn_simge.UseVisualStyleBackColor = true;
-            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
-            // 
-            // btn_tamekran
-            // 
-            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_tamekran.FlatAppearance.BorderSize = 0;
-            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tamekran.Location = new System.Drawing.Point(54, 8);
-            this.btn_tamekran.Name = "btn_tamekran";
-            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
-            this.btn_tamekran.TabIndex = 9;
-            this.btn_tamekran.UseVisualStyleBackColor = true;
-            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            this.tableLayoutPanel5.TabIndex = 14;
             // 
             // btn_cikiss
             // 
@@ -422,9 +396,33 @@
             this.btn_cikiss.Location = new System.Drawing.Point(100, 8);
             this.btn_cikiss.Name = "btn_cikiss";
             this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
-            this.btn_cikiss.TabIndex = 10;
+            this.btn_cikiss.TabIndex = 13;
             this.btn_cikiss.UseVisualStyleBackColor = true;
             this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            // 
+            // btn_tamekran
+            // 
+            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tamekran.FlatAppearance.BorderSize = 0;
+            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tamekran.Location = new System.Drawing.Point(54, 8);
+            this.btn_tamekran.Name = "btn_tamekran";
+            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
+            this.btn_tamekran.TabIndex = 12;
+            this.btn_tamekran.UseVisualStyleBackColor = true;
+            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            // 
+            // btn_simge
+            // 
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.FlatAppearance.BorderSize = 0;
+            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simge.Location = new System.Drawing.Point(8, 8);
+            this.btn_simge.Name = "btn_simge";
+            this.btn_simge.Size = new System.Drawing.Size(30, 30);
+            this.btn_simge.TabIndex = 11;
+            this.btn_simge.UseVisualStyleBackColor = true;
+            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
             // 
             // Form7
             // 

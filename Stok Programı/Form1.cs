@@ -151,7 +151,7 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 

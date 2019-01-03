@@ -145,24 +145,12 @@ namespace Stok_Programı
                 urun_listele();
             }
         }
-
-        private void pctrbx_resim_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
             this.Close();
             form6.Show();
         }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_simge_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -175,7 +163,7 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 }

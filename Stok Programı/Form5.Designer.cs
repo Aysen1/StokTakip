@@ -161,7 +161,7 @@
             this.lbl_firmaadi.Location = new System.Drawing.Point(34, 30);
             this.lbl_firmaadi.Name = "lbl_firmaadi";
             this.lbl_firmaadi.Size = new System.Drawing.Size(63, 13);
-            this.lbl_firmaadi.TabIndex = 1;
+            this.lbl_firmaadi.TabIndex = 16;
             this.lbl_firmaadi.Text = "Firma Adi:";
             // 
             // txt_adet
@@ -171,7 +171,7 @@
             this.txt_adet.Location = new System.Drawing.Point(164, 245);
             this.txt_adet.Name = "txt_adet";
             this.txt_adet.Size = new System.Drawing.Size(121, 20);
-            this.txt_adet.TabIndex = 12;
+            this.txt_adet.TabIndex = 4;
             // 
             // cmbx_firmaadi
             // 
@@ -181,7 +181,7 @@
             this.cmbx_firmaadi.Location = new System.Drawing.Point(164, 26);
             this.cmbx_firmaadi.Name = "cmbx_firmaadi";
             this.cmbx_firmaadi.Size = new System.Drawing.Size(121, 21);
-            this.cmbx_firmaadi.TabIndex = 6;
+            this.cmbx_firmaadi.TabIndex = 1;
             // 
             // lbl_adet
             // 
@@ -212,7 +212,7 @@
             this.txt_giristarihi.Location = new System.Drawing.Point(164, 172);
             this.txt_giristarihi.Name = "txt_giristarihi";
             this.txt_giristarihi.Size = new System.Drawing.Size(121, 20);
-            this.txt_giristarihi.TabIndex = 10;
+            this.txt_giristarihi.TabIndex = 3;
             // 
             // cmbx_urunadi
             // 
@@ -222,7 +222,7 @@
             this.cmbx_urunadi.Location = new System.Drawing.Point(164, 99);
             this.cmbx_urunadi.Name = "cmbx_urunadi";
             this.cmbx_urunadi.Size = new System.Drawing.Size(121, 21);
-            this.cmbx_urunadi.TabIndex = 8;
+            this.cmbx_urunadi.TabIndex = 2;
             this.cmbx_urunadi.SelectedIndexChanged += new System.EventHandler(this.cmbx_urunadi_SelectedIndexChanged);
             // 
             // lbl_giristarihi
@@ -253,7 +253,7 @@
             this.grpbx_islem.Location = new System.Drawing.Point(3, 326);
             this.grpbx_islem.Name = "grpbx_islem";
             this.grpbx_islem.Size = new System.Drawing.Size(518, 66);
-            this.grpbx_islem.TabIndex = 2;
+            this.grpbx_islem.TabIndex = 11;
             this.grpbx_islem.TabStop = false;
             // 
             // tableLayoutPanel4
@@ -269,7 +269,7 @@
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(512, 47);
-            this.tableLayoutPanel4.TabIndex = 5;
+            this.tableLayoutPanel4.TabIndex = 11;
             // 
             // btn_temizle
             // 
@@ -279,7 +279,7 @@
             this.btn_temizle.Location = new System.Drawing.Point(90, 3);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(75, 40);
-            this.btn_temizle.TabIndex = 0;
+            this.btn_temizle.TabIndex = 15;
             this.btn_temizle.UseVisualStyleBackColor = true;
             this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
             // 
@@ -291,7 +291,7 @@
             this.btn_kaydet.Location = new System.Drawing.Point(346, 3);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(75, 40);
-            this.btn_kaydet.TabIndex = 1;
+            this.btn_kaydet.TabIndex = 14;
             this.btn_kaydet.UseVisualStyleBackColor = true;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
@@ -328,7 +328,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.78808F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.21192F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(524, 395);
-            this.tableLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.TabIndex = 9;
             // 
             // tableLayoutPanel3
             // 
@@ -343,7 +343,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(518, 317);
-            this.tableLayoutPanel3.TabIndex = 5;
+            this.tableLayoutPanel3.TabIndex = 17;
             // 
             // tableLayoutPanel5
             // 
@@ -360,7 +360,7 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(133, 39);
-            this.tableLayoutPanel5.TabIndex = 5;
+            this.tableLayoutPanel5.TabIndex = 8;
             // 
             // btn_simge
             // 
@@ -415,6 +415,7 @@
             this.Name = "Form5";
             this.Text = "ÜRETİM ÇIKIŞ";
             this.Load += new System.EventHandler(this.Form5_Load);
+            this.Shown += new System.EventHandler(this.Form5_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -130,7 +130,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(329, 392);
             this.tableLayoutPanel1.TabIndex = 4;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // txt_kayit_tarihi
             // 
@@ -140,7 +139,6 @@
             this.txt_kayit_tarihi.Name = "txt_kayit_tarihi";
             this.txt_kayit_tarihi.Size = new System.Drawing.Size(159, 20);
             this.txt_kayit_tarihi.TabIndex = 21;
-            this.txt_kayit_tarihi.TextChanged += new System.EventHandler(this.txt_kayit_tarihi_TextChanged);
             // 
             // cmbx_ilce
             // 
@@ -151,7 +149,6 @@
             this.cmbx_ilce.Name = "cmbx_ilce";
             this.cmbx_ilce.Size = new System.Drawing.Size(159, 21);
             this.cmbx_ilce.TabIndex = 23;
-            this.cmbx_ilce.SelectedIndexChanged += new System.EventHandler(this.cmbx_ilce_SelectedIndexChanged);
             // 
             // txt_adres
             // 
@@ -161,7 +158,6 @@
             this.txt_adres.Name = "txt_adres";
             this.txt_adres.Size = new System.Drawing.Size(159, 20);
             this.txt_adres.TabIndex = 17;
-            this.txt_adres.TextChanged += new System.EventHandler(this.txt_adres_TextChanged);
             // 
             // lbl_firmaadi
             // 
@@ -173,7 +169,6 @@
             this.lbl_firmaadi.Size = new System.Drawing.Size(158, 13);
             this.lbl_firmaadi.TabIndex = 0;
             this.lbl_firmaadi.Text = "Firma Adı:";
-            this.lbl_firmaadi.Click += new System.EventHandler(this.lbl_firmaadi_Click);
             // 
             // cmbx_il
             // 
@@ -194,7 +189,6 @@
             this.txt_firmaadi.Name = "txt_firmaadi";
             this.txt_firmaadi.Size = new System.Drawing.Size(159, 20);
             this.txt_firmaadi.TabIndex = 9;
-            this.txt_firmaadi.TextChanged += new System.EventHandler(this.txt_firmaadi_TextChanged);
             // 
             // lbl_sorumlu
             // 
@@ -206,7 +200,6 @@
             this.lbl_sorumlu.Size = new System.Drawing.Size(158, 13);
             this.lbl_sorumlu.TabIndex = 1;
             this.lbl_sorumlu.Text = "Sorumlu:";
-            this.lbl_sorumlu.Click += new System.EventHandler(this.lbl_sorumlu_Click);
             // 
             // lbl_kayit_tarihi
             // 
@@ -227,7 +220,6 @@
             this.txt_sorumlu.Name = "txt_sorumlu";
             this.txt_sorumlu.Size = new System.Drawing.Size(159, 20);
             this.txt_sorumlu.TabIndex = 10;
-            this.txt_sorumlu.TextChanged += new System.EventHandler(this.txt_sorumlu_TextChanged);
             // 
             // txt_vergino
             // 
@@ -237,7 +229,6 @@
             this.txt_vergino.Name = "txt_vergino";
             this.txt_vergino.Size = new System.Drawing.Size(159, 20);
             this.txt_vergino.TabIndex = 13;
-            this.txt_vergino.TextChanged += new System.EventHandler(this.txt_vergino_TextChanged);
             // 
             // lbl_telno
             // 
@@ -249,7 +240,6 @@
             this.lbl_telno.Size = new System.Drawing.Size(158, 13);
             this.lbl_telno.TabIndex = 2;
             this.lbl_telno.Text = "Telefon Numarası:";
-            this.lbl_telno.Click += new System.EventHandler(this.lbl_telno_Click);
             // 
             // txt_vergidaire
             // 
@@ -259,7 +249,6 @@
             this.txt_vergidaire.Name = "txt_vergidaire";
             this.txt_vergidaire.Size = new System.Drawing.Size(159, 20);
             this.txt_vergidaire.TabIndex = 12;
-            this.txt_vergidaire.TextChanged += new System.EventHandler(this.txt_vergidaire_TextChanged);
             // 
             // lbl_mersis
             // 
@@ -271,7 +260,6 @@
             this.lbl_mersis.Size = new System.Drawing.Size(158, 13);
             this.lbl_mersis.TabIndex = 18;
             this.lbl_mersis.Text = "Mersis No:";
-            this.lbl_mersis.Click += new System.EventHandler(this.lbl_mersis_Click);
             // 
             // txt_telno
             // 
@@ -281,7 +269,6 @@
             this.txt_telno.Name = "txt_telno";
             this.txt_telno.Size = new System.Drawing.Size(159, 20);
             this.txt_telno.TabIndex = 11;
-            this.txt_telno.TextChanged += new System.EventHandler(this.txt_telno_TextChanged);
             // 
             // lbl_vergidaire
             // 
@@ -293,7 +280,6 @@
             this.lbl_vergidaire.Size = new System.Drawing.Size(158, 13);
             this.lbl_vergidaire.TabIndex = 3;
             this.lbl_vergidaire.Text = "Vergi Dairesi:";
-            this.lbl_vergidaire.Click += new System.EventHandler(this.lbl_vergidaire_Click);
             // 
             // lbl_vergino
             // 
@@ -305,7 +291,6 @@
             this.lbl_vergino.Size = new System.Drawing.Size(158, 13);
             this.lbl_vergino.TabIndex = 4;
             this.lbl_vergino.Text = "Vergi No:";
-            this.lbl_vergino.Click += new System.EventHandler(this.lbl_vergino_Click);
             // 
             // lbl_il
             // 
@@ -317,7 +302,6 @@
             this.lbl_il.Size = new System.Drawing.Size(158, 13);
             this.lbl_il.TabIndex = 6;
             this.lbl_il.Text = "İl:";
-            this.lbl_il.Click += new System.EventHandler(this.lbl_il_Click);
             // 
             // lbl_adres
             // 
@@ -329,7 +313,6 @@
             this.lbl_adres.Size = new System.Drawing.Size(158, 13);
             this.lbl_adres.TabIndex = 8;
             this.lbl_adres.Text = "Adres:";
-            this.lbl_adres.Click += new System.EventHandler(this.lbl_adres_Click);
             // 
             // lbl_ilce
             // 
@@ -341,7 +324,6 @@
             this.lbl_ilce.Size = new System.Drawing.Size(158, 13);
             this.lbl_ilce.TabIndex = 7;
             this.lbl_ilce.Text = "İlçe:";
-            this.lbl_ilce.Click += new System.EventHandler(this.lbl_ilce_Click);
             // 
             // txt_mersis
             // 
@@ -351,7 +333,6 @@
             this.txt_mersis.Name = "txt_mersis";
             this.txt_mersis.Size = new System.Drawing.Size(159, 20);
             this.txt_mersis.TabIndex = 19;
-            this.txt_mersis.TextChanged += new System.EventHandler(this.txt_mersis_TextChanged);
             // 
             // grpbx_islem
             // 

@@ -33,7 +33,6 @@ namespace Stok_Programı
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
             il_listele();
-            //ilce_listele();
         }
 
         private void btn_temizle_Click(object sender, EventArgs e)
@@ -121,102 +120,6 @@ namespace Stok_Programı
                 cmbx_ilce.DataSource = dt;
             }
         }
-
-        private void txt_kayit_tarihi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_adres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbx_ilce_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_mersis_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_vergino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_vergidaire_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_telno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_sorumlu_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_firmaadi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_firmaadi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_sorumlu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_telno_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_vergidaire_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_vergino_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_mersis_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_il_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_ilce_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_adres_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_simge_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -229,7 +132,7 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 }

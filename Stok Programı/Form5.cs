@@ -172,7 +172,12 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
+        }
+
+        private void Form5_Shown(object sender, EventArgs e)
+        {
+            cmbx_firmaadi.Focus();
         }
     }
 }

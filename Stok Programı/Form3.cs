@@ -93,7 +93,6 @@ namespace Stok_Programı
         {
             OpenFileDialog opfd1 = new OpenFileDialog();
             opfd1.Filter = "Png Dosyası (*.png)|*.png";
-            //opfd1.ShowDialog();
             if(opfd1.ShowDialog()==DialogResult.OK)
             {
                 pctrbx_urunresim.Image = Image.FromFile(opfd1.FileName);
@@ -131,11 +130,6 @@ namespace Stok_Programı
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             timer1.Start();
         }
-
-        private void txt_urun_kodu_TextChanged(object sender, EventArgs e)
-        {
-       
-        }
         private void urunkod_kontrol()
         {
             baglanti.Open();
@@ -166,7 +160,12 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
+        }
+
+        private void Form3_Shown(object sender, EventArgs e)
+        {
+            txt_urun_kodu.Focus();
         }
     }
 }

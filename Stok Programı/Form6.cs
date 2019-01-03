@@ -91,12 +91,6 @@ namespace Stok_Programı
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             timer1.Start();
         }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_araclar_Click(object sender, EventArgs e)
         {
 
