@@ -62,6 +62,10 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pctrbx_logo = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.btn_simge = new System.Windows.Forms.Button();
+            this.btn_cikiss = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -71,6 +75,7 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_logo)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -210,7 +215,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(245, 129);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(245, 138);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
@@ -227,7 +232,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel3.Controls.Add(this.btn_6, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_5, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.btn_4, 0, 1);
@@ -370,7 +375,7 @@
             this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel5.Controls.Add(this.btn_giris, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btn_kapat, 0, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 198);
@@ -387,7 +392,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel4.Controls.Add(this.btn_9, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_8, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_sil, 2, 0);
@@ -501,7 +506,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Controls.Add(this.pctrbx_logo, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(248, 26);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(248, 35);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -530,6 +535,59 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "KULLANICI GİRİŞİ";
             // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel8.ColumnCount = 3;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel8.Controls.Add(this.btn_tamekran, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_simge, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_cikiss, 2, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(541, 12);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(136, 38);
+            this.tableLayoutPanel8.TabIndex = 5;
+            // 
+            // btn_tamekran
+            // 
+            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tamekran.FlatAppearance.BorderSize = 0;
+            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tamekran.Location = new System.Drawing.Point(54, 4);
+            this.btn_tamekran.Name = "btn_tamekran";
+            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
+            this.btn_tamekran.TabIndex = 7;
+            this.btn_tamekran.UseVisualStyleBackColor = true;
+            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            // 
+            // btn_simge
+            // 
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.FlatAppearance.BorderSize = 0;
+            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simge.Location = new System.Drawing.Point(8, 4);
+            this.btn_simge.Name = "btn_simge";
+            this.btn_simge.Size = new System.Drawing.Size(30, 30);
+            this.btn_simge.TabIndex = 6;
+            this.btn_simge.UseVisualStyleBackColor = true;
+            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
+            // 
+            // btn_cikiss
+            // 
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.FlatAppearance.BorderSize = 0;
+            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cikiss.Location = new System.Drawing.Point(100, 4);
+            this.btn_cikiss.Name = "btn_cikiss";
+            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
+            this.btn_cikiss.TabIndex = 8;
+            this.btn_cikiss.UseVisualStyleBackColor = true;
+            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btn_giris;
@@ -539,6 +597,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btn_kapat;
             this.ClientSize = new System.Drawing.Size(689, 441);
+            this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel8);
             this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -562,6 +622,7 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_logo)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,6 +666,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pctrbx_logo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Button btn_tamekran;
+        private System.Windows.Forms.Button btn_simge;
+        private System.Windows.Forms.Button btn_cikiss;
     }
 }
 

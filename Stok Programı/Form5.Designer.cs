@@ -55,6 +55,10 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_simge = new System.Windows.Forms.Button();
+            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.btn_cikiss = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -64,6 +68,7 @@
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -77,7 +82,7 @@
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(620, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -299,9 +304,9 @@
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 498);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(524, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(620, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -317,7 +322,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.93734F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.grpbx_islem, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 32);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(48, 69);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.78808F));
@@ -340,13 +345,68 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(518, 317);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel5.Controls.Add(this.btn_cikiss, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btn_tamekran, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btn_simge, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(475, 27);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(133, 39);
+            this.tableLayoutPanel5.TabIndex = 5;
+            // 
+            // btn_simge
+            // 
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.FlatAppearance.BorderSize = 0;
+            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simge.Location = new System.Drawing.Point(8, 4);
+            this.btn_simge.Name = "btn_simge";
+            this.btn_simge.Size = new System.Drawing.Size(30, 30);
+            this.btn_simge.TabIndex = 6;
+            this.btn_simge.UseVisualStyleBackColor = true;
+            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
+            // 
+            // btn_tamekran
+            // 
+            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tamekran.FlatAppearance.BorderSize = 0;
+            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tamekran.Location = new System.Drawing.Point(54, 4);
+            this.btn_tamekran.Name = "btn_tamekran";
+            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
+            this.btn_tamekran.TabIndex = 7;
+            this.btn_tamekran.UseVisualStyleBackColor = true;
+            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            // 
+            // btn_cikiss
+            // 
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.FlatAppearance.BorderSize = 0;
+            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cikiss.Location = new System.Drawing.Point(100, 4);
+            this.btn_cikiss.Name = "btn_cikiss";
+            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
+            this.btn_cikiss.TabIndex = 8;
+            this.btn_cikiss.UseVisualStyleBackColor = true;
+            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            // 
             // Form5
             // 
             this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(524, 446);
+            this.ClientSize = new System.Drawing.Size(620, 520);
+            this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -367,6 +427,7 @@
             this.statusStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -400,5 +461,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button btn_cikiss;
+        private System.Windows.Forms.Button btn_tamekran;
+        private System.Windows.Forms.Button btn_simge;
     }
 }

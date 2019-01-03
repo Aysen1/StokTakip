@@ -58,6 +58,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_simge = new System.Windows.Forms.Button();
+            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.btn_cikiss = new System.Windows.Forms.Button();
             this.grpbx_urunbilgileri.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -70,6 +74,7 @@
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpbx_urunbilgileri
@@ -177,7 +182,7 @@
             this.cikisToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(560, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(619, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -343,9 +348,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 348);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 444);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(560, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(619, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -367,7 +372,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.grpbx_islemler, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 24);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(29, 72);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
@@ -390,12 +395,67 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(554, 237);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel7.Controls.Add(this.btn_cikiss, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btn_simge, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btn_tamekran, 1, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(485, 30);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(134, 39);
+            this.tableLayoutPanel7.TabIndex = 6;
+            // 
+            // btn_simge
+            // 
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.FlatAppearance.BorderSize = 0;
+            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simge.Location = new System.Drawing.Point(8, 8);
+            this.btn_simge.Name = "btn_simge";
+            this.btn_simge.Size = new System.Drawing.Size(30, 30);
+            this.btn_simge.TabIndex = 0;
+            this.btn_simge.UseVisualStyleBackColor = true;
+            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
+            // 
+            // btn_tamekran
+            // 
+            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tamekran.FlatAppearance.BorderSize = 0;
+            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tamekran.Location = new System.Drawing.Point(54, 8);
+            this.btn_tamekran.Name = "btn_tamekran";
+            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
+            this.btn_tamekran.TabIndex = 1;
+            this.btn_tamekran.UseVisualStyleBackColor = true;
+            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            // 
+            // btn_cikiss
+            // 
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.FlatAppearance.BorderSize = 0;
+            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cikiss.Location = new System.Drawing.Point(100, 8);
+            this.btn_cikiss.Name = "btn_cikiss";
+            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
+            this.btn_cikiss.TabIndex = 2;
+            this.btn_cikiss.UseVisualStyleBackColor = true;
+            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            // 
             // Form3
             // 
             this.AcceptButton = this.btn_kaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 370);
+            this.ClientSize = new System.Drawing.Size(619, 466);
+            this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -418,6 +478,7 @@
             this.statusStrip1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,5 +515,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Button btn_cikiss;
+        private System.Windows.Forms.Button btn_simge;
+        private System.Windows.Forms.Button btn_tamekran;
     }
 }

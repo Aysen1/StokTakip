@@ -23,6 +23,7 @@ namespace Stok_Programı
 
         private void Form6_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\urungiris.png");
@@ -33,6 +34,9 @@ namespace Stok_Programı
             btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\firmakayit.png");
             pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo.jpeg");
             btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\araclar.png");
+            btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
+            btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
+            btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
             menuStrip1.Visible = false;
         }
 
@@ -107,18 +111,11 @@ namespace Stok_Programı
             da.Fill(ds);
             string data = null;
 
-            //object misvalue = System.Reflection.Missing.Value;
             Microsoft.Office.Interop.Excel.Application xl = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel.Workbook wb = default(Microsoft.Office.Interop.Excel.Workbook);
             wb = xl.Workbooks.Add(@"C:\\Users\\NFM-1PC\\Documents\\Urun Kayit.xls");
             Microsoft.Office.Interop.Excel.Worksheet ws = default(Microsoft.Office.Interop.Excel.Worksheet);
             ws = wb.Worksheets.get_Item(1);
-          //  ws.Cells[1, 1].Value = "UrunID";
-            //ws.Cells[1, 2].Value = "FirmaAdi";
-           // ws.Cells[1, 3].Value = "UrunKodu";
-          //  ws.Cells[1, 4].Value = "KayitTarihi";
-          //  ws.Cells[1, 5].Value = "UrunResim";
-          //  ws.Cells[1, 6].Value = "ToplamAdet";
 
             for (int i = 2; i <= ds.Tables[0].Rows.Count +1; i++)
             {
@@ -131,6 +128,23 @@ namespace Stok_Programı
             }
             baglanti.Close();
             xl.Visible = true;
+        }
+
+        private void btn_simge_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_tamekran_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btn_cikiss_Click(object sender, EventArgs e)
+        {
+            Form form1 = new Form1();
+            form1.Show();
+            this.Dispose();
         }
     }
 }
