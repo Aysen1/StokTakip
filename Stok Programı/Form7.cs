@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Drawing.Drawing2D;
+
 namespace Stok_Programı
 {
     public partial class Form7 : Form
@@ -28,12 +30,27 @@ namespace Stok_Programı
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
-            pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\barkod.png");
+            pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
             btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
             btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
+
+            GraphicsPath gp1 = new GraphicsPath();
+            gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
+            Region rg1 = new Region(gp1);
+            btn_simge.Region = rg1;
+
+            GraphicsPath gp2 = new GraphicsPath();
+            gp2.AddEllipse(0, 0, btn_tamekran.Width - 1, btn_tamekran.Height - 1);
+            Region rg2 = new Region(gp2);
+            btn_tamekran.Region = rg2;
+
+            GraphicsPath gp3 = new GraphicsPath();
+            gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
+            Region rg3 = new Region(gp3);
+            btn_cikiss.Region = rg3;
         }
         private void firma_listele()
         {
@@ -164,6 +181,34 @@ namespace Stok_Programı
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void excelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
+            baglanti.Open();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from UrunGiris", baglanti);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            string data = null;
+
+            Microsoft.Office.Interop.Excel.Application xl = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel.Workbook wb = default(Microsoft.Office.Interop.Excel.Workbook);
+            wb = xl.Workbooks.Add(@"C:\\Users\\NFM-1PC\\Documents\\uretim giris.xls");
+            Microsoft.Office.Interop.Excel.Worksheet ws = default(Microsoft.Office.Interop.Excel.Worksheet);
+            ws = wb.Worksheets.get_Item(1);
+
+            for (int i = 2; i <= ds.Tables[0].Rows.Count + 1; i++)
+            {
+                for (int j = 2; j <= ds.Tables[0].Columns.Count + 1; j++)
+                {
+                    data = ds.Tables[0].Rows[i - 2].ItemArray[j - 2].ToString();
+                    ws.Cells[i, j - 1] = data;
+                    ws.Cells[i, j - 1].ColumnWidth = 20;
+                }
+            }
+            baglanti.Close();
+            xl.Visible = true;
         }
     }
 }

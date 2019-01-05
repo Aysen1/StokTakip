@@ -57,8 +57,7 @@
             this.btn_temizle = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ürünListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stokRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cikisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -66,9 +65,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_simge = new System.Windows.Forms.Button();
-            this.btn_tamekran = new System.Windows.Forms.Button();
             this.btn_cikiss = new System.Windows.Forms.Button();
+            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.btn_simge = new System.Windows.Forms.Button();
             this.grpbx_firmabilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grpbx_islem.SuspendLayout();
@@ -388,8 +387,7 @@
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
-            this.ürünListesiToolStripMenuItem,
-            this.stokRaporuToolStripMenuItem,
+            this.excelToolStripMenuItem,
             this.yardımToolStripMenuItem,
             this.cikisToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -405,17 +403,12 @@
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
             this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
-            // ürünListesiToolStripMenuItem
+            // excelToolStripMenuItem
             // 
-            this.ürünListesiToolStripMenuItem.Name = "ürünListesiToolStripMenuItem";
-            this.ürünListesiToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.ürünListesiToolStripMenuItem.Text = "Ürün Listesi";
-            // 
-            // stokRaporuToolStripMenuItem
-            // 
-            this.stokRaporuToolStripMenuItem.Name = "stokRaporuToolStripMenuItem";
-            this.stokRaporuToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.stokRaporuToolStripMenuItem.Text = "Stok Raporu";
+            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.excelToolStripMenuItem.Text = "Excel Dokümanı";
+            this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
@@ -484,17 +477,17 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(148, 41);
             this.tableLayoutPanel4.TabIndex = 5;
             // 
-            // btn_simge
+            // btn_cikiss
             // 
-            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_simge.FlatAppearance.BorderSize = 0;
-            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simge.Location = new System.Drawing.Point(8, 5);
-            this.btn_simge.Name = "btn_simge";
-            this.btn_simge.Size = new System.Drawing.Size(30, 30);
-            this.btn_simge.TabIndex = 0;
-            this.btn_simge.UseVisualStyleBackColor = true;
-            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.FlatAppearance.BorderSize = 0;
+            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cikiss.Location = new System.Drawing.Point(105, 5);
+            this.btn_cikiss.Name = "btn_cikiss";
+            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
+            this.btn_cikiss.TabIndex = 2;
+            this.btn_cikiss.UseVisualStyleBackColor = true;
+            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
             // 
             // btn_tamekran
             // 
@@ -508,17 +501,17 @@
             this.btn_tamekran.UseVisualStyleBackColor = true;
             this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
             // 
-            // btn_cikiss
+            // btn_simge
             // 
-            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_cikiss.FlatAppearance.BorderSize = 0;
-            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cikiss.Location = new System.Drawing.Point(105, 5);
-            this.btn_cikiss.Name = "btn_cikiss";
-            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
-            this.btn_cikiss.TabIndex = 2;
-            this.btn_cikiss.UseVisualStyleBackColor = true;
-            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.FlatAppearance.BorderSize = 0;
+            this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_simge.Location = new System.Drawing.Point(8, 5);
+            this.btn_simge.Name = "btn_simge";
+            this.btn_simge.Size = new System.Drawing.Size(30, 30);
+            this.btn_simge.TabIndex = 0;
+            this.btn_simge.UseVisualStyleBackColor = true;
+            this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
             // 
             // Form4
             // 
@@ -558,8 +551,7 @@
         private System.Windows.Forms.GroupBox grpbx_islem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ürünListesiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stokRaporuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.TextBox txt_adres;
         private System.Windows.Forms.TextBox txt_vergino;

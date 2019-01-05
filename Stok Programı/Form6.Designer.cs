@@ -239,6 +239,7 @@
             this.btn_ayarlar.Size = new System.Drawing.Size(105, 84);
             this.btn_ayarlar.TabIndex = 4;
             this.btn_ayarlar.UseVisualStyleBackColor = true;
+            this.btn_ayarlar.Click += new System.EventHandler(this.btn_ayarlar_Click);
             // 
             // btn_stok
             // 

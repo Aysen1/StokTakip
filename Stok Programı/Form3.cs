@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-
+using System.Drawing.Drawing2D;
+using System.Globalization;
 namespace Stok_Programı
 {
     public partial class Form3 : Form
@@ -30,7 +31,7 @@ namespace Stok_Programı
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
-            pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\barkod.png");
+            pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
             btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
             btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             btn_resim_yukle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\yukle.fw.png");
@@ -38,6 +39,30 @@ namespace Stok_Programı
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
+
+            GraphicsPath gp1 = new GraphicsPath();
+            gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
+            Region rg1 = new Region(gp1);
+            btn_simge.Region = rg1;
+
+            GraphicsPath gp2 = new GraphicsPath();
+            gp2.AddEllipse(0, 0, btn_tamekran.Width - 1, btn_tamekran.Height - 1);
+            Region rg2 = new Region(gp2);
+            btn_tamekran.Region = rg2;
+
+            GraphicsPath gp3 = new GraphicsPath();
+            gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
+            Region rg3 = new Region(gp3);
+            btn_cikiss.Region = rg3;
+
+            Localization.Culture = new CultureInfo("en-US");
+            this.Text = Localization.form2;
+            lbl_FirmaAdi.Text = Localization.lbl_firmaadi;
+            lbl_urun_kodu.Text = Localization.lbl_urunkodu;
+            lbl_kayıt_tarihi.Text = Localization.lbl_kayit;
+            anaToolStripMenuItem.Text = Localization.lbl_anasayfa;
+            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
+            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
         }
         private void firma_listele()
         {
@@ -102,7 +127,7 @@ namespace Stok_Programı
 
         private void btn_resim_sil_Click(object sender, EventArgs e)
         {
-            pctrbx_urunresim.Image = null;
+            pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
         }
 
         private void anaToolStripMenuItem_Click(object sender, EventArgs e)

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 using System.Data.SqlClient;
 using System.IO;
+using System.Drawing.Drawing2D;
+using System.Globalization;
 
 
 namespace Stok_Programı
@@ -26,18 +28,36 @@ namespace Stok_Programı
             this.WindowState = FormWindowState.Maximized;
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
-            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\urungiris.png");
-            btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\urunckis.png");
+            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.png");
+            btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urunckis.png");
             btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
             btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
             btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
-            btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\firmakayit.png");
-            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo.jpeg");
-            btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\araclar.png");
+            btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmakayit.png");
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
+            btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
             menuStrip1.Visible = false;
+
+            GraphicsPath gp1 = new GraphicsPath();
+            gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
+            Region rg1 = new Region(gp1);
+            btn_simge.Region = rg1;
+
+            GraphicsPath gp2 = new GraphicsPath();
+            gp2.AddEllipse(0, 0, btn_tamekran.Width - 1, btn_tamekran.Height - 1);
+            Region rg2 = new Region(gp2);
+            btn_tamekran.Region = rg2;
+
+            GraphicsPath gp3 = new GraphicsPath();
+            gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
+            Region rg3 = new Region(gp3);
+            btn_cikiss.Region = rg3;
+
+            Localization.Culture = new CultureInfo("en-US");
+            this.Text = Localization.form6;
         }
 
         private void btn_urun_Click(object sender, EventArgs e)
@@ -93,7 +113,9 @@ namespace Stok_Programı
         }
         private void btn_araclar_Click(object sender, EventArgs e)
         {
-
+            Form8 form8 = new Form8();
+            form8.Show();
+            this.Hide();
         }
 
         private void btn_stok_Click(object sender, EventArgs e)
@@ -139,6 +161,13 @@ namespace Stok_Programı
             Form form1 = new Form1();
             form1.Show();
             this.Dispose();
+        }
+
+        private void btn_ayarlar_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+            this.Hide();
         }
     }
 }

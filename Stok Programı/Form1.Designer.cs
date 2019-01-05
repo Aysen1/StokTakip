@@ -34,9 +34,9 @@
             this.stoklarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_kullanici_adi = new System.Windows.Forms.Label();
             this.txt_kullanici_isim = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_sifre = new System.Windows.Forms.Label();
             this.txt_kullanici_sifre = new System.Windows.Forms.TextBox();
             this.btn_kapat = new System.Windows.Forms.Button();
             this.btn_giris = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.lbl_versiyon = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pctrbx_logo = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_kullanicigiris = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_tamekran = new System.Windows.Forms.Button();
             this.btn_simge = new System.Windows.Forms.Button();
@@ -122,9 +122,9 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_kullanici_adi, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_kullanici_isim, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_sifre, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_kullanici_sifre, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -135,16 +135,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(201, 84);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // label1
+            // lbl_kullanici_adi
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(16, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kullanıcı Adı:";
+            this.lbl_kullanici_adi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_kullanici_adi.AutoSize = true;
+            this.lbl_kullanici_adi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_kullanici_adi.Location = new System.Drawing.Point(16, 16);
+            this.lbl_kullanici_adi.Name = "lbl_kullanici_adi";
+            this.lbl_kullanici_adi.Size = new System.Drawing.Size(81, 13);
+            this.lbl_kullanici_adi.TabIndex = 1;
+            this.lbl_kullanici_adi.Text = "Kullanıcı Adı:";
             // 
             // txt_kullanici_isim
             // 
@@ -155,16 +155,16 @@
             this.txt_kullanici_isim.Size = new System.Drawing.Size(95, 20);
             this.txt_kullanici_isim.TabIndex = 2;
             // 
-            // label2
+            // lbl_sifre
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(60, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre:";
+            this.lbl_sifre.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_sifre.AutoSize = true;
+            this.lbl_sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sifre.Location = new System.Drawing.Point(60, 61);
+            this.lbl_sifre.Name = "lbl_sifre";
+            this.lbl_sifre.Size = new System.Drawing.Size(37, 13);
+            this.lbl_sifre.TabIndex = 1;
+            this.lbl_sifre.Text = "Şifre:";
             // 
             // txt_kullanici_sifre
             // 
@@ -505,7 +505,7 @@
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Controls.Add(this.pctrbx_logo, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.lbl_kullanicigiris, 0, 1);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(248, 35);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -524,16 +524,16 @@
             this.pctrbx_logo.TabIndex = 1;
             this.pctrbx_logo.TabStop = false;
             // 
-            // label4
+            // lbl_kullanicigiris
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(32, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "KULLANICI GİRİŞİ";
+            this.lbl_kullanicigiris.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_kullanicigiris.AutoSize = true;
+            this.lbl_kullanicigiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_kullanicigiris.Location = new System.Drawing.Point(32, 66);
+            this.lbl_kullanicigiris.Name = "lbl_kullanicigiris";
+            this.lbl_kullanicigiris.Size = new System.Drawing.Size(136, 17);
+            this.lbl_kullanicigiris.TabIndex = 2;
+            this.lbl_kullanicigiris.Text = "KULLANICI GİRİŞİ";
             // 
             // tableLayoutPanel8
             // 
@@ -603,6 +603,7 @@
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(341, 390);
@@ -638,8 +639,8 @@
         private System.Windows.Forms.Button btn_giris;
         private System.Windows.Forms.TextBox txt_kullanici_sifre;
         private System.Windows.Forms.TextBox txt_kullanici_isim;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_sifre;
+        private System.Windows.Forms.Label lbl_kullanici_adi;
         private System.Windows.Forms.Button btn_kapat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -665,7 +666,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pctrbx_logo;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_kullanicigiris;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button btn_tamekran;
         private System.Windows.Forms.Button btn_simge;

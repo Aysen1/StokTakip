@@ -39,8 +39,6 @@
             this.lbl_urun_kodu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ürünleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stoklarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cikisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbx_islemler = new System.Windows.Forms.GroupBox();
@@ -59,9 +57,9 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_cikiss = new System.Windows.Forms.Button();
             this.btn_simge = new System.Windows.Forms.Button();
             this.btn_tamekran = new System.Windows.Forms.Button();
-            this.btn_cikiss = new System.Windows.Forms.Button();
             this.grpbx_urunbilgileri.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -175,8 +173,6 @@
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anaToolStripMenuItem,
-            this.ürünleriToolStripMenuItem,
-            this.stoklarıRaporlaToolStripMenuItem,
             this.yardımToolStripMenuItem,
             this.cikisToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -191,18 +187,6 @@
             this.anaToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.anaToolStripMenuItem.Text = "Anasayfa";
             this.anaToolStripMenuItem.Click += new System.EventHandler(this.anaToolStripMenuItem_Click);
-            // 
-            // ürünleriToolStripMenuItem
-            // 
-            this.ürünleriToolStripMenuItem.Name = "ürünleriToolStripMenuItem";
-            this.ürünleriToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.ürünleriToolStripMenuItem.Text = "Ürün Listesi";
-            // 
-            // stoklarıRaporlaToolStripMenuItem
-            // 
-            this.stoklarıRaporlaToolStripMenuItem.Name = "stoklarıRaporlaToolStripMenuItem";
-            this.stoklarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.stoklarıRaporlaToolStripMenuItem.Text = "Stok Raporu";
             // 
             // yardımToolStripMenuItem
             // 
@@ -411,6 +395,18 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(134, 39);
             this.tableLayoutPanel7.TabIndex = 6;
             // 
+            // btn_cikiss
+            // 
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.FlatAppearance.BorderSize = 0;
+            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cikiss.Location = new System.Drawing.Point(100, 8);
+            this.btn_cikiss.Name = "btn_cikiss";
+            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
+            this.btn_cikiss.TabIndex = 2;
+            this.btn_cikiss.UseVisualStyleBackColor = true;
+            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
+            // 
             // btn_simge
             // 
             this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -434,18 +430,6 @@
             this.btn_tamekran.TabIndex = 1;
             this.btn_tamekran.UseVisualStyleBackColor = true;
             this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
-            // 
-            // btn_cikiss
-            // 
-            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_cikiss.FlatAppearance.BorderSize = 0;
-            this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cikiss.Location = new System.Drawing.Point(100, 8);
-            this.btn_cikiss.Name = "btn_cikiss";
-            this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
-            this.btn_cikiss.TabIndex = 2;
-            this.btn_cikiss.UseVisualStyleBackColor = true;
-            this.btn_cikiss.Click += new System.EventHandler(this.btn_cikiss_Click);
             // 
             // Form3
             // 
@@ -489,8 +473,6 @@
         private System.Windows.Forms.GroupBox grpbx_urunbilgileri;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem anaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ürünleriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stoklarıRaporlaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.GroupBox grpbx_islemler;
         private System.Windows.Forms.GroupBox grpbx_resim;

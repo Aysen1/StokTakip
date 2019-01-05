@@ -31,8 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ürünListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stokRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbx_bilgi = new System.Windows.Forms.GroupBox();
@@ -78,8 +77,7 @@
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
-            this.ürünListesiToolStripMenuItem,
-            this.stokRaporuToolStripMenuItem,
+            this.excelToolStripMenuItem,
             this.yardımToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -95,17 +93,12 @@
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
             this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
-            // ürünListesiToolStripMenuItem
+            // excelToolStripMenuItem
             // 
-            this.ürünListesiToolStripMenuItem.Name = "ürünListesiToolStripMenuItem";
-            this.ürünListesiToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.ürünListesiToolStripMenuItem.Text = "Ürün Listesi";
-            // 
-            // stokRaporuToolStripMenuItem
-            // 
-            this.stokRaporuToolStripMenuItem.Name = "stokRaporuToolStripMenuItem";
-            this.stokRaporuToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.stokRaporuToolStripMenuItem.Text = "Stok Raporu";
+            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.excelToolStripMenuItem.Text = "Excel Dokümanı";
+            this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
@@ -461,8 +454,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ürünListesiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stokRaporuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.GroupBox grpbx_bilgi;
         private System.Windows.Forms.TextBox txt_islem;

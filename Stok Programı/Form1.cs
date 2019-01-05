@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Drawing2D;
+using System.Globalization;
 
 namespace Stok_Programı
 {
@@ -50,6 +52,14 @@ namespace Stok_Programı
         private void Form1_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+           /* ybutton btn_simge1 = new ybutton();
+            btn_simge1.Size = new Size(30,30);
+            btn_simge1.Location = new System.Drawing.Point(1150,15);
+            btn_simge1.FlatAppearance.BorderSize = 0;
+            btn_simge1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_simge1.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
+            this.Controls.Add(btn_simge1);*/
+
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             lbl_versiyon.Text = Application.ProductVersion;
             lbl_versiyon.Text ="Versiyon "+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
@@ -69,11 +79,33 @@ namespace Stok_Programı
             btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgiris.fw.png");
             btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptal.fw.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
+           // btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\simge.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
-            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\logo1.png");
-        }
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo1.png");;
 
+            GraphicsPath gp1 = new GraphicsPath();
+            gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
+            Region rg1 = new Region(gp1);
+            btn_simge.Region = rg1; 
+
+            GraphicsPath gp2 = new GraphicsPath();
+            gp2.AddEllipse(0, 0, btn_tamekran.Width - 1, btn_tamekran.Height - 1);
+            Region rg2 = new Region(gp2);
+            btn_tamekran.Region = rg2;
+
+            GraphicsPath gp3 = new GraphicsPath();
+            gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
+            Region rg3 = new Region(gp3);
+            btn_cikiss.Region = rg3;
+
+            Localization.Culture = new CultureInfo("en-US");
+            lbl_kullanicigiris.Text = Localization.lbl_kullanicigiris;
+            lbl_kullanici_adi.Text = Localization.lbl_kullanici_adi;
+            lbl_sifre.Text = Localization.lbl_sifre;
+            this.Text = Localization.form1;
+            lbl_destek.Text = Localization.lbl_destek;
+        }
         private void btn_kapat_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -152,6 +184,72 @@ namespace Stok_Programı
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private GraphicsPath RoundedRectangle(RectangleF rect, float xradius, float yradius,bool round_ul, bool round_ur, bool round_lr, bool round_ll)
+        {
+            PointF point1, point2;
+            GraphicsPath path = new GraphicsPath();
+            if (round_ul)
+            {
+                RectangleF corner = new RectangleF(rect.X, rect.Y, 2 * xradius, 2 * yradius);
+                path.AddArc(corner, 180, 90);
+                point1 = new PointF(rect.X, rect.Y);
+            }
+            else
+                point1 = new PointF(rect.X, rect.Y);
+
+            if (round_ur)
+                point2 = new PointF(rect.Right - xradius, rect.Y);
+            else
+                point2 = new PointF(rect.Right,rect.Y);
+            path.AddLine(point1, point2);
+
+            if (round_ur)
+            {
+                RectangleF corner = new RectangleF(rect.Right - 2 * xradius, rect.Y, 2 * xradius, 2 * yradius);
+                path.AddArc(corner, 270, 90);
+                point1 = new PointF(rect.Right, rect.Y + yradius);
+            }
+            else
+                point1 = new PointF(rect.Right,rect.Y);
+            if (round_lr)
+                point2 = new PointF(rect.Right, rect.Bottom - yradius);
+            else
+                point2 = new PointF(rect.Right, rect.Bottom);
+            path.AddLine(point1, point2);
+
+            if (round_lr)
+            {
+                RectangleF corner = new RectangleF(rect.Right - 2 * xradius, rect.Bottom - 2 * yradius, 2 * xradius, 2 * yradius);
+                path.AddArc(corner, 0, 90);
+                point1 = new PointF(rect.Right - xradius, rect.Bottom);
+            }
+            else
+                point1 = new PointF(rect.Right, rect.Bottom);
+
+            if (round_ll)
+                point2 = new PointF(rect.X + xradius, rect.Bottom);
+            else
+                point2 = new PointF(rect.X,rect.Bottom);
+            path.AddLine(point1, point2);
+
+            if (round_ll)
+            {
+                RectangleF corner = new RectangleF(rect.X, rect.Bottom - 2 * yradius, 2 * xradius, 2 * yradius);
+                path.AddArc(corner, 90, 90);
+                point1 = new PointF(rect.X, rect.Bottom - yradius);
+            }
+            else
+                point1 = new PointF(rect.X,rect.Bottom);
+
+            if (round_ul)
+                point2 = new PointF(rect.X, rect.Y + yradius);
+            else
+                point2 = new PointF(rect.X, rect.Y);
+            path.AddLine(point1,point2);
+
+            path.CloseFigure();
+            return path;
         }
     }
 
