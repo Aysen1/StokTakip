@@ -216,4 +216,16 @@
   <data name="türkçe" xml:space="preserve">
     <value>Türkçe</value>
   </data>
+  <data name="bilgifisi" xml:space="preserve">
+    <value>Bilgi Fişi</value>
+  </data>
+  <data name="form8" xml:space="preserve">
+    <value>ARAÇLAR</value>
+  </data>
+  <data name="yazici" xml:space="preserve">
+    <value>Yazıcılar:</value>
+  </data>
+  <data name="y_ekle" xml:space="preserve">
+    <value>Yazıcı Ekle</value>
+  </data>
 </root>

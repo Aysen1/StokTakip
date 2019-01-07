@@ -139,7 +139,7 @@
             this.btn_bilgi_fisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_bilgi_fisi.Location = new System.Drawing.Point(212, 155);
             this.btn_bilgi_fisi.Name = "btn_bilgi_fisi";
-            this.btn_bilgi_fisi.Size = new System.Drawing.Size(92, 23);
+            this.btn_bilgi_fisi.Size = new System.Drawing.Size(173, 23);
             this.btn_bilgi_fisi.TabIndex = 4;
             this.btn_bilgi_fisi.Text = "Bilgi Fişi ";
             this.btn_bilgi_fisi.UseVisualStyleBackColor = true;

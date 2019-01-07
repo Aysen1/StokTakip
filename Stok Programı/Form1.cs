@@ -62,7 +62,6 @@ namespace Stok_Programı
 
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             lbl_versiyon.Text = Application.ProductVersion;
-            lbl_versiyon.Text ="Versiyon "+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             lbl_nfm.Text = "NFM AJANS SAN. VE TIC. LTD. STI";
             lbl_destek.Text = "Destek Hattı: 0 (236) 231 40 10";
             btn_0.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b0.fw.png");
@@ -78,7 +77,7 @@ namespace Stok_Programı
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
-            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo1.png");;
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo1.png");
 
             GraphicsPath gp1 = new GraphicsPath();
             gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
@@ -101,7 +100,7 @@ namespace Stok_Programı
                 btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgirisK.fw.png");
                 btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptalK.fw.png");
                 btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsilK.fw.png");
-
+                lbl_versiyon.Text = "Version " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
@@ -109,8 +108,11 @@ namespace Stok_Programı
                 btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsil.fw.png");
                 btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgiris.fw.png");
                 btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptal.fw.png");
+                lbl_versiyon.Text = "Versiyon " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
             metin();
+            this.BackColor=Properties.Settings.Default.tema;
+            tableLayoutPanel4.BackColor = Properties.Settings.Default.tema;
         }
         private void btn_kapat_Click(object sender, EventArgs e)
         {

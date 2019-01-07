@@ -19,7 +19,7 @@ namespace Stok_Programı
         {
             InitializeComponent();
         }
-
+        string secilen;
         private void Form9_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
@@ -47,7 +47,7 @@ namespace Stok_Programı
             else if(Properties.Settings.Default.dil=="Türkçe")
                 Localization.Culture = new CultureInfo("");
             metin();
-
+            this.BackColor = Properties.Settings.Default.tema;
         }
 
         private void btn_simge_Click(object sender, EventArgs e)
@@ -106,6 +106,19 @@ namespace Stok_Programı
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
+
+        private void btn_tema_Click(object sender, EventArgs e)
+        {
+            DialogResult kontrol;
+            ColorDialog renk = new ColorDialog();
+            kontrol = renk.ShowDialog();
+            if (kontrol == DialogResult.OK)
+            {
+                this.BackColor = renk.Color;
+                Properties.Settings.Default.tema = renk.Color;
+                Properties.Settings.Default.Save();
+            }
         }
 
     }

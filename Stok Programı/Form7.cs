@@ -26,6 +26,7 @@ namespace Stok_Programı
 
         private void Form7_Load(object sender, EventArgs e)
         {
+            this.BackColor = Properties.Settings.Default.tema;
             this.WindowState = FormWindowState.Maximized;
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
@@ -64,6 +65,7 @@ namespace Stok_Programı
                 btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             }
             metinler();
+            toolStripStatusLabel1.BackColor = Color.White;            
         }
         private void firma_listele()
         {

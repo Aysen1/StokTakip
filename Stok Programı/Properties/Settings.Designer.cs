@@ -34,5 +34,16 @@ namespace Stok_Programı.Properties {
                 this["dil"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color tema {
+            get {
+                return ((global::System.Drawing.Color)(this["tema"]));
+            }
+            set {
+                this["tema"] = value;
+            }
+        }
     }
 }

@@ -69,6 +69,8 @@ namespace Stok_Programı
                 btn_resim_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sill.fw.png");
             }
             metin();
+            this.BackColor = Properties.Settings.Default.tema;
+            toolStripStatusLabel1.BackColor = Color.White;            
         }
         private void firma_listele()
         {

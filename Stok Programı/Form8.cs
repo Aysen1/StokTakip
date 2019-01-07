@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Drawing.Drawing2D;
 using System.Management;
+using System.Globalization;
 
 namespace Stok_Programı
 {
@@ -24,6 +25,7 @@ namespace Stok_Programı
         private void Form8_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            this.BackColor = Properties.Settings.Default.tema;
             foreach (String yazici in PrinterSettings.InstalledPrinters)
             {
                 cmbx_yazici.Items.Add(yazici);
@@ -50,7 +52,12 @@ namespace Stok_Programı
             gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
-            
+
+            if (Properties.Settings.Default.dil == "İngilizce")
+                Localization.Culture = new CultureInfo("en-US");
+            else if (Properties.Settings.Default.dil == "Türkçe")
+                Localization.Culture = new CultureInfo("");
+            metin();
         }
 
         private void btn_simge_Click(object sender, EventArgs e)
@@ -114,6 +121,16 @@ namespace Stok_Programı
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
+        private void metin()
+        {
+            this.Text = Localization.form8;
+            lbl_yazici.Text = Localization.yazici;
+            btn_bilgi_fisi.Text = Localization.bilgifisi;
+            btn_yazici_ekle.Text = Localization.y_ekle;
+            anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
+            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
+            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
         }
     }
 }

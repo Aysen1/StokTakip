@@ -88,6 +88,15 @@ namespace Stok_Programı {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bilgi Fişi.
+        /// </summary>
+        internal static string bilgifisi {
+            get {
+                return ResourceManager.GetString("bilgifisi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Çıkış Tarihi:.
         /// </summary>
         internal static string cikis {
@@ -165,6 +174,15 @@ namespace Stok_Programı {
         internal static string form7 {
             get {
                 return ResourceManager.GetString("form7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ARAÇLAR.
+        /// </summary>
+        internal static string form8 {
+            get {
+                return ResourceManager.GetString("form8", resourceCulture);
             }
         }
         
@@ -354,6 +372,24 @@ namespace Stok_Programı {
         internal static string vergi_no {
             get {
                 return ResourceManager.GetString("vergi_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yazıcı Ekle.
+        /// </summary>
+        internal static string y_ekle {
+            get {
+                return ResourceManager.GetString("y_ekle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yazıcılar:.
+        /// </summary>
+        internal static string yazici {
+            get {
+                return ResourceManager.GetString("yazici", resourceCulture);
             }
         }
     }

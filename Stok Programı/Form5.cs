@@ -59,6 +59,7 @@ namespace Stok_Programı
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            this.BackColor = Properties.Settings.Default.tema;
             this.WindowState = FormWindowState.Maximized;
             timer1.Start();
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
@@ -98,6 +99,7 @@ namespace Stok_Programı
                 btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             }
             metin();
+            toolStripStatusLabel1.BackColor = Color.White;            
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)

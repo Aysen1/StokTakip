@@ -62,6 +62,8 @@ namespace Stok_Programı
                 btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             }
             metin();
+            this.BackColor = Properties.Settings.Default.tema;
+            toolStripStatusLabel1.BackColor = Color.White;            
         }
 
         private void btn_temizle_Click(object sender, EventArgs e)
