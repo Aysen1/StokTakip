@@ -75,11 +75,7 @@ namespace Stok_Programı
             btn_7.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b7.fw.png");
             btn_8.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b8.fw.png");
             btn_9.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b9.fw.png");
-            btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsil.fw.png");
-            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgiris.fw.png");
-            btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptal.fw.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
-           // btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Downloads\\simge.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
             pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo1.png");;
@@ -99,12 +95,22 @@ namespace Stok_Programı
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
 
-            Localization.Culture = new CultureInfo("en-US");
-            lbl_kullanicigiris.Text = Localization.lbl_kullanicigiris;
-            lbl_kullanici_adi.Text = Localization.lbl_kullanici_adi;
-            lbl_sifre.Text = Localization.lbl_sifre;
-            this.Text = Localization.form1;
-            lbl_destek.Text = Localization.lbl_destek;
+            if (Properties.Settings.Default.dil == "İngilizce")
+            {
+                Localization.Culture = new CultureInfo("en-US");
+                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgirisK.fw.png");
+                btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptalK.fw.png");
+                btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsilK.fw.png");
+
+            }
+            else if (Properties.Settings.Default.dil == "Türkçe")
+            {
+                Localization.Culture = new CultureInfo("");
+                btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsil.fw.png");
+                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgiris.fw.png");
+                btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptal.fw.png");
+            }
+            metin();
         }
         private void btn_kapat_Click(object sender, EventArgs e)
         {
@@ -184,6 +190,14 @@ namespace Stok_Programı
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void metin()
+        {
+            lbl_kullanici_adi.Text = Localization.lbl_kullanici_adi;
+            this.Text = Localization.form1;
+            lbl_kullanicigiris.Text = Localization.lbl_kullanicigiris;
+            lbl_sifre.Text = Localization.lbl_sifre;
+            lbl_destek.Text = Localization.lbl_destek;
         }
         private GraphicsPath RoundedRectangle(RectangleF rect, float xradius, float yradius,bool round_ul, bool round_ur, bool round_lr, bool round_ll)
         {

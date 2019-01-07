@@ -471,17 +471,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpbx_urunbilgileri;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem anaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.GroupBox grpbx_islemler;
         private System.Windows.Forms.GroupBox grpbx_resim;
         private System.Windows.Forms.TextBox txt_kayit_tarihi;
         private System.Windows.Forms.TextBox txt_urun_kodu;
         private System.Windows.Forms.ComboBox cmbbx_firma_adi;
-        private System.Windows.Forms.Label lbl_kayıt_tarihi;
-        private System.Windows.Forms.Label lbl_urun_kodu;
-        private System.Windows.Forms.Label lbl_FirmaAdi;
         private System.Windows.Forms.Button btn_kaydet;
         private System.Windows.Forms.Button btn_temizle;
         private System.Windows.Forms.PictureBox pctrbx_urunresim;
@@ -490,7 +484,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -501,5 +494,12 @@
         private System.Windows.Forms.Button btn_cikiss;
         private System.Windows.Forms.Button btn_simge;
         private System.Windows.Forms.Button btn_tamekran;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripMenuItem anaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
+        public System.Windows.Forms.Label lbl_kayıt_tarihi;
+        public System.Windows.Forms.Label lbl_urun_kodu;
+        public System.Windows.Forms.Label lbl_FirmaAdi;
+        public System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
     }
 }

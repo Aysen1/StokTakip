@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 
 namespace Stok_Programı
 {
@@ -31,8 +32,6 @@ namespace Stok_Programı
             baglanti = new SqlConnection("Data Source=NFM-1\\MSSQLSERVER01; Integrated Security=TRUE; Initial Catalog=StokTakip");
             firma_listele();
             pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
-            btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-            btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
@@ -51,6 +50,20 @@ namespace Stok_Programı
             gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
+            Form9 form9 = new Form9();
+            if (Properties.Settings.Default.dil == "İngilizce")
+            {
+                Localization.Culture = new CultureInfo("en-US");
+                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
+            }
+            else if (Properties.Settings.Default.dil == "Türkçe")
+            { 
+                Localization.Culture = new CultureInfo("");
+                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+            }
+            metinler();
         }
         private void firma_listele()
         {
@@ -209,6 +222,19 @@ namespace Stok_Programı
             }
             baglanti.Close();
             xl.Visible = true;
+        }
+        private void metinler()
+        {
+            this.Text = Localization.form7;
+            anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
+            excelToolStripMenuItem.Text = Localization.excel_dokumani;
+            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
+            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
+            lbl_firmaadi.Text = Localization.lbl_firmaadi;
+            lbl_urunkodu.Text = Localization.lbl_urunkodu;
+            lbl_giristarihi.Text = Localization.giris;
+            lbl_adet.Text = Localization.adet;
+            lbl_islemm.Text = Localization.islem;
         }
     }
 }

@@ -98,5 +98,22 @@ namespace Stok_Programı
                 cmbx_yazici.Items.Add(yazici);
             }
         }
+
+        private void cikisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            this.Hide();
+            form6.Show();
+        }
+
+        private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
     }
 }

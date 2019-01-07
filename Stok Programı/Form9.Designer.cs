@@ -32,7 +32,15 @@
             this.btn_cikiss = new System.Windows.Forms.Button();
             this.btn_tamekran = new System.Windows.Forms.Button();
             this.btn_simge = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dilTercihiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cikisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -88,6 +96,65 @@
             this.btn_simge.UseVisualStyleBackColor = true;
             this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.anasayfaToolStripMenuItem,
+            this.dilTercihiToolStripMenuItem,
+            this.yardımToolStripMenuItem,
+            this.cikisToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(536, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // anasayfaToolStripMenuItem
+            // 
+            this.anasayfaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
+            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.anasayfaToolStripMenuItem.Text = "Anasayfa";
+            this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
+            // 
+            // dilTercihiToolStripMenuItem
+            // 
+            this.dilTercihiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.türkçeToolStripMenuItem,
+            this.ingilizceToolStripMenuItem});
+            this.dilTercihiToolStripMenuItem.Name = "dilTercihiToolStripMenuItem";
+            this.dilTercihiToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.dilTercihiToolStripMenuItem.Text = "Dil Tercihi";
+            // 
+            // türkçeToolStripMenuItem
+            // 
+            this.türkçeToolStripMenuItem.Name = "türkçeToolStripMenuItem";
+            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.türkçeToolStripMenuItem.Text = "Türkçe";
+            this.türkçeToolStripMenuItem.Click += new System.EventHandler(this.türkçeToolStripMenuItem_Click);
+            // 
+            // ingilizceToolStripMenuItem
+            // 
+            this.ingilizceToolStripMenuItem.Name = "ingilizceToolStripMenuItem";
+            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingilizceToolStripMenuItem.Text = "İngilizce";
+            this.ingilizceToolStripMenuItem.Click += new System.EventHandler(this.ingilizceToolStripMenuItem_Click);
+            // 
+            // yardımToolStripMenuItem
+            // 
+            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.yardımToolStripMenuItem.Text = "Yardım";
+            this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
+            // 
+            // cikisToolStripMenuItem
+            // 
+            this.cikisToolStripMenuItem.Name = "cikisToolStripMenuItem";
+            this.cikisToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.cikisToolStripMenuItem.Text = "Çıkış";
+            this.cikisToolStripMenuItem.Click += new System.EventHandler(this.cikisToolStripMenuItem_Click);
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,11 +162,16 @@
             this.ClientSize = new System.Drawing.Size(536, 432);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form9";
             this.Text = "AYARLAR";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +181,12 @@
         private System.Windows.Forms.Button btn_cikiss;
         private System.Windows.Forms.Button btn_tamekran;
         private System.Windows.Forms.Button btn_simge;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dilTercihiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem türkçeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingilizceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
     }
 }

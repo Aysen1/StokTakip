@@ -33,7 +33,7 @@
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cikisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpbx_bilgi = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_islemm = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.anasayfaToolStripMenuItem,
             this.excelToolStripMenuItem,
             this.yardımToolStripMenuItem,
-            this.çıkışToolStripMenuItem});
+            this.cikisToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(617, 24);
@@ -107,12 +107,12 @@
             this.yardımToolStripMenuItem.Text = "Yardım";
             this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
             // 
-            // çıkışToolStripMenuItem
+            // cikisToolStripMenuItem
             // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            this.cikisToolStripMenuItem.Name = "cikisToolStripMenuItem";
+            this.cikisToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.cikisToolStripMenuItem.Text = "Çıkış";
+            this.cikisToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // grpbx_bilgi
             // 
@@ -453,20 +453,12 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.GroupBox grpbx_bilgi;
         private System.Windows.Forms.TextBox txt_islem;
         private System.Windows.Forms.TextBox txt_adet;
         private System.Windows.Forms.TextBox txt_giristarihi;
         private System.Windows.Forms.ComboBox cmbx_urunadi;
         private System.Windows.Forms.ComboBox cmbx_firmaadi;
-        private System.Windows.Forms.Label lbl_islemm;
-        private System.Windows.Forms.Label lbl_adet;
-        private System.Windows.Forms.Label lbl_giristarihi;
-        private System.Windows.Forms.Label lbl_urunkodu;
-        private System.Windows.Forms.Label lbl_firmaadi;
         private System.Windows.Forms.GroupBox grpbx_islem;
         private System.Windows.Forms.Button btn_kaydet;
         private System.Windows.Forms.Button btn_temizle;
@@ -478,10 +470,18 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button btn_cikiss;
         private System.Windows.Forms.Button btn_tamekran;
         private System.Windows.Forms.Button btn_simge;
+        public System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
+        public System.Windows.Forms.Label lbl_islemm;
+        public System.Windows.Forms.Label lbl_adet;
+        public System.Windows.Forms.Label lbl_giristarihi;
+        public System.Windows.Forms.Label lbl_urunkodu;
+        public System.Windows.Forms.Label lbl_firmaadi;
+        public System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
     }
 }

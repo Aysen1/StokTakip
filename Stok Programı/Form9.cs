@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 
 namespace Stok_Programı
 {
     public partial class Form9 : Form
     {
+        string a="";
         public Form9()
         {
             InitializeComponent();
@@ -40,6 +42,12 @@ namespace Stok_Programı
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
 
+            if (Properties.Settings.Default.dil == "İngilizce")
+                Localization.Culture = new CultureInfo("en-US");
+            else if(Properties.Settings.Default.dil=="Türkçe")
+                Localization.Culture = new CultureInfo("");
+            metin();
+
         }
 
         private void btn_simge_Click(object sender, EventArgs e)
@@ -57,6 +65,48 @@ namespace Stok_Programı
             Application.Exit();
         }
 
+        private void ingilizceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Localization.Culture = new CultureInfo("en-US");
+            Properties.Settings.Default.dil = "İngilizce";
+            Properties.Settings.Default.Save();
+            metin();
+        }
+
+        private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            this.Hide();
+            form6.Show();
+        }
+        public void metin()
+        {
+            this.Text = Localization.ayarlar;
+            anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
+            dilTercihiToolStripMenuItem.Text = Localization.dil;
+            türkçeToolStripMenuItem.Text = Localization.türkçe;
+            ingilizceToolStripMenuItem.Text = Localization.ingilizce;
+            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
+            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
+        }
+
+        private void türkçeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Localization.Culture = new CultureInfo("");
+            Properties.Settings.Default.dil = "Türkçe";
+            Properties.Settings.Default.Save();
+            metin();
+        }
+
+        private void cikisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.nfmajans.com/iletisim.html");
+        }
 
     }
 }

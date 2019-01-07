@@ -639,8 +639,6 @@
         private System.Windows.Forms.Button btn_giris;
         private System.Windows.Forms.TextBox txt_kullanici_sifre;
         private System.Windows.Forms.TextBox txt_kullanici_isim;
-        private System.Windows.Forms.Label lbl_sifre;
-        private System.Windows.Forms.Label lbl_kullanici_adi;
         private System.Windows.Forms.Button btn_kapat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -659,18 +657,20 @@
         private System.Windows.Forms.Button btn_9;
         private System.Windows.Forms.Button btn_8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lbl_destek;
         private System.Windows.Forms.Label lbl_nfm;
         private System.Windows.Forms.Label lbl_versiyon;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pctrbx_logo;
-        private System.Windows.Forms.Label lbl_kullanicigiris;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button btn_tamekran;
         private System.Windows.Forms.Button btn_simge;
         private System.Windows.Forms.Button btn_cikiss;
+        public System.Windows.Forms.Label lbl_kullanici_adi;
+        public System.Windows.Forms.Label lbl_sifre;
+        public System.Windows.Forms.Label lbl_kullanicigiris;
+        public System.Windows.Forms.Label lbl_destek;
     }
 }
 

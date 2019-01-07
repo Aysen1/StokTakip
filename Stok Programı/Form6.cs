@@ -27,15 +27,8 @@ namespace Stok_Programı
         {
             this.WindowState = FormWindowState.Maximized;
             timer1.Start();
-            toolStripStatusLabel1.Text = DateTime.Now.ToString();
-            btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.png");
-            btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urunckis.png");
-            btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
-            btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
-            btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
-            btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmakayit.png");
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();      
             pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
-            btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
@@ -55,9 +48,29 @@ namespace Stok_Programı
             gp3.AddEllipse(0, 0, btn_cikiss.Width - 1, btn_cikiss.Height - 1);
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
-
-            Localization.Culture = new CultureInfo("en-US");
-            this.Text = Localization.form6;
+            if (Properties.Settings.Default.dil == "İngilizce")
+            {
+                Localization.Culture = new CultureInfo("en-US");
+                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungirisK.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikisK.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayitK.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmaK.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stokK.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclarK.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlarK.fw.png");
+            }
+            else if (Properties.Settings.Default.dil == "Türkçe")
+            {
+                Localization.Culture = new CultureInfo("");
+                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikis.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlar.fw.png");
+            }
+            metin();
         }
 
         private void btn_urun_Click(object sender, EventArgs e)
@@ -168,6 +181,10 @@ namespace Stok_Programı
             Form9 form9 = new Form9();
             form9.Show();
             this.Hide();
+        }
+        private void metin()
+        {
+            this.Text = Localization.form6; 
         }
     }
 }

@@ -66,8 +66,6 @@ namespace Stok_Programı
             firma_listele();
             urun_listele();
             pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
-            btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-            btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
             btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
             btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
@@ -87,16 +85,19 @@ namespace Stok_Programı
             Region rg3 = new Region(gp3);
             btn_cikiss.Region = rg3;
 
-            Localization.Culture = new CultureInfo("en-US");
-            this.Text = Localization.form5;
-            anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
-            excelToolStripMenuItem.Text = Localization.excel_dokumani;
-            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
-            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
-            lbl_firmaadi.Text = Localization.lbl_firmaadi;
-            lbl_urunkodu.Text = Localization.lbl_urunkodu;
-            lbl_giristarihi.Text = Localization.lbl_kayit;
-            lbl_adet.Text = Localization.adet;
+            if (Properties.Settings.Default.dil == "İngilizce")
+            {
+                Localization.Culture = new CultureInfo("en-US");
+                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
+            }
+            else if (Properties.Settings.Default.dil == "Türkçe")
+            {
+                Localization.Culture = new CultureInfo("");
+                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+            }
+            metin();
         }
 
         private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
@@ -234,6 +235,18 @@ namespace Stok_Programı
             }
             baglanti.Close();
             xl.Visible = true;
+        }
+        private void metin()
+        {
+            this.Text = Localization.form5;
+            anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
+            excelToolStripMenuItem.Text = Localization.excel_dokumani;
+            yardımToolStripMenuItem.Text = Localization.lbl_yardim;
+            cikisToolStripMenuItem.Text = Localization.lbl_cikis;
+            lbl_firmaadi.Text = Localization.lbl_firmaadi;
+            lbl_urunkodu.Text = Localization.lbl_urunkodu;
+            lbl_giristarihi.Text = Localization.cikis; ;
+            lbl_adet.Text = Localization.adet;
         }
     }
 }

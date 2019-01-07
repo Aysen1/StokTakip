@@ -129,7 +129,7 @@
   <data name="form1" xml:space="preserve">
     <value>KULLANICI GİRİŞİ</value>
   </data>
-  <data name="form2" xml:space="preserve">
+  <data name="form3" xml:space="preserve">
     <value>ÜRÜN KAYIT FORMU</value>
   </data>
   <data name="form4" xml:space="preserve">
@@ -140,6 +140,9 @@
   </data>
   <data name="form6" xml:space="preserve">
     <value>ANA İŞLEM PANELİ</value>
+  </data>
+  <data name="form7" xml:space="preserve">
+    <value>ÜRÜN GİRİŞ</value>
   </data>
   <data name="il" xml:space="preserve">
     <value>İl:</value>
@@ -191,5 +194,26 @@
   </data>
   <data name="vergi_no" xml:space="preserve">
     <value>Vergi No:</value>
+  </data>
+  <data name="ayarlar" xml:space="preserve">
+    <value>AYARLAR</value>
+  </data>
+  <data name="cikis" xml:space="preserve">
+    <value>Çıkış Tarihi:</value>
+  </data>
+  <data name="dil" xml:space="preserve">
+    <value>Dil Tercihi</value>
+  </data>
+  <data name="giris" xml:space="preserve">
+    <value>Giriş Tarihi:</value>
+  </data>
+  <data name="ingilizce" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="islem" xml:space="preserve">
+    <value>İşlem:</value>
+  </data>
+  <data name="türkçe" xml:space="preserve">
+    <value>Türkçe</value>
   </data>
 </root>

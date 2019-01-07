@@ -79,6 +79,33 @@ namespace Stok_Programı {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AYARLAR.
+        /// </summary>
+        internal static string ayarlar {
+            get {
+                return ResourceManager.GetString("ayarlar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Çıkış Tarihi:.
+        /// </summary>
+        internal static string cikis {
+            get {
+                return ResourceManager.GetString("cikis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dil Tercihi.
+        /// </summary>
+        internal static string dil {
+            get {
+                return ResourceManager.GetString("dil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Excel Dokümanı.
         /// </summary>
         internal static string excel_dokumani {
@@ -99,9 +126,9 @@ namespace Stok_Programı {
         /// <summary>
         ///   Looks up a localized string similar to ÜRÜN KAYIT FORMU.
         /// </summary>
-        internal static string form2 {
+        internal static string form3 {
             get {
-                return ResourceManager.GetString("form2", resourceCulture);
+                return ResourceManager.GetString("form3", resourceCulture);
             }
         }
         
@@ -142,6 +169,15 @@ namespace Stok_Programı {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Giriş Tarihi:.
+        /// </summary>
+        internal static string giris {
+            get {
+                return ResourceManager.GetString("giris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to İl:.
         /// </summary>
         internal static string il {
@@ -156,6 +192,24 @@ namespace Stok_Programı {
         internal static string ilce {
             get {
                 return ResourceManager.GetString("ilce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to İngilizce.
+        /// </summary>
+        internal static string ingilizce {
+            get {
+                return ResourceManager.GetString("ingilizce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to İşlem:.
+        /// </summary>
+        internal static string islem {
+            get {
+                return ResourceManager.GetString("islem", resourceCulture);
             }
         }
         
@@ -273,6 +327,15 @@ namespace Stok_Programı {
         internal static string telefon {
             get {
                 return ResourceManager.GetString("telefon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Türkçe.
+        /// </summary>
+        internal static string türkçe {
+            get {
+                return ResourceManager.GetString("türkçe", resourceCulture);
             }
         }
         

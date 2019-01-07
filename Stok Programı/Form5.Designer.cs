@@ -327,7 +327,7 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 395F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
             this.tableLayoutPanel3.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.pctrbx_resim, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -430,9 +430,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pctrbx_resim;
         private System.Windows.Forms.GroupBox grpbx_islem;
@@ -440,23 +437,26 @@
         private System.Windows.Forms.Button btn_kaydet;
         private System.Windows.Forms.Button btn_temizle;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Label lbl_firmaadi;
         private System.Windows.Forms.ComboBox cmbx_firmaadi;
         private System.Windows.Forms.ComboBox cmbx_urunadi;
-        private System.Windows.Forms.Label lbl_urunkodu;
         private System.Windows.Forms.TextBox txt_giristarihi;
-        private System.Windows.Forms.Label lbl_giristarihi;
         private System.Windows.Forms.TextBox txt_adet;
-        private System.Windows.Forms.Label lbl_adet;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button btn_cikiss;
         private System.Windows.Forms.Button btn_tamekran;
         private System.Windows.Forms.Button btn_simge;
+        public System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
+        public System.Windows.Forms.Label lbl_firmaadi;
+        public System.Windows.Forms.Label lbl_urunkodu;
+        public System.Windows.Forms.Label lbl_giristarihi;
+        public System.Windows.Forms.Label lbl_adet;
+        public System.Windows.Forms.ToolStripMenuItem cikisToolStripMenuItem;
     }
 }
