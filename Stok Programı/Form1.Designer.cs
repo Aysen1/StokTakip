@@ -178,6 +178,7 @@
             this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pctr_logo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -228,6 +229,7 @@
             this.tableLayoutPanel28.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -672,19 +674,22 @@
             // 
             // tableLayoutPanel8
             // 
-            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel8.Controls.Add(this.btn_tamekran, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.btn_simge, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.btn_cikiss, 2, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(1155, 27);
+            this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel8.ColumnCount = 4;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1113F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel8.Controls.Add(this.btn_cikiss, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_tamekran, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_simge, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pctr_logo, 0, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(6, 27);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(136, 38);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1285, 51);
             this.tableLayoutPanel8.TabIndex = 5;
             // 
             // btn_tamekran
@@ -692,7 +697,7 @@
             this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_tamekran.FlatAppearance.BorderSize = 0;
             this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tamekran.Location = new System.Drawing.Point(54, 4);
+            this.btn_tamekran.Location = new System.Drawing.Point(1183, 10);
             this.btn_tamekran.Name = "btn_tamekran";
             this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
             this.btn_tamekran.TabIndex = 7;
@@ -704,7 +709,7 @@
             this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_simge.FlatAppearance.BorderSize = 0;
             this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simge.Location = new System.Drawing.Point(8, 4);
+            this.btn_simge.Location = new System.Drawing.Point(1125, 10);
             this.btn_simge.Name = "btn_simge";
             this.btn_simge.Size = new System.Drawing.Size(30, 30);
             this.btn_simge.TabIndex = 6;
@@ -716,7 +721,7 @@
             this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_cikiss.FlatAppearance.BorderSize = 0;
             this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cikiss.Location = new System.Drawing.Point(100, 4);
+            this.btn_cikiss.Location = new System.Drawing.Point(1241, 10);
             this.btn_cikiss.Name = "btn_cikiss";
             this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
             this.btn_cikiss.TabIndex = 8;
@@ -736,7 +741,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.tableLayoutPanel9);
-            this.panel2.Location = new System.Drawing.Point(23, 37);
+            this.panel2.Location = new System.Drawing.Point(23, 70);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(522, 269);
             this.panel2.TabIndex = 7;
@@ -881,7 +886,7 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.tableLayoutPanel12);
-            this.panel3.Location = new System.Drawing.Point(9, 37);
+            this.panel3.Location = new System.Drawing.Point(9, 70);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(576, 347);
             this.panel3.TabIndex = 8;
@@ -1142,7 +1147,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.tableLayoutPanel18);
-            this.panel4.Location = new System.Drawing.Point(559, 41);
+            this.panel4.Location = new System.Drawing.Point(559, 75);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(508, 396);
             this.panel4.TabIndex = 9;
@@ -1381,7 +1386,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel22);
-            this.panel5.Location = new System.Drawing.Point(11, 400);
+            this.panel5.Location = new System.Drawing.Point(11, 278);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(703, 472);
             this.panel5.TabIndex = 10;
@@ -1927,7 +1932,7 @@
             this.panel7.Controls.Add(this.btn_yazici_ekle);
             this.panel7.Controls.Add(this.cmbx_yazici);
             this.panel7.Controls.Add(this.lbl_yazici);
-            this.panel7.Location = new System.Drawing.Point(384, 583);
+            this.panel7.Location = new System.Drawing.Point(806, 577);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(485, 120);
             this.panel7.TabIndex = 12;
@@ -1984,7 +1989,7 @@
             // 
             this.panel8.Controls.Add(this.lbl_tema);
             this.panel8.Controls.Add(this.btn_tema);
-            this.panel8.Location = new System.Drawing.Point(732, 477);
+            this.panel8.Location = new System.Drawing.Point(819, 490);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(388, 100);
             this.panel8.TabIndex = 9;
@@ -2055,6 +2060,14 @@
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            // 
+            // pctr_logo
+            // 
+            this.pctr_logo.Location = new System.Drawing.Point(3, 3);
+            this.pctr_logo.Name = "pctr_logo";
+            this.pctr_logo.Size = new System.Drawing.Size(248, 45);
+            this.pctr_logo.TabIndex = 9;
+            this.pctr_logo.TabStop = false;
             // 
             // Form1
             // 
@@ -2145,6 +2158,7 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2303,6 +2317,7 @@
         private System.Windows.Forms.ToolStripMenuItem ingilizceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pctr_logo;
     }
 }
 

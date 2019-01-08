@@ -43,6 +43,7 @@ namespace Stok_Programı
                 panel1.Visible = false;
                 panel2.Anchor = AnchorStyles.Top - Left;
                 panel2.Visible = true;
+                pctr_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
 
                 excelDokümanıToolStripMenuItem.Visible = false;
                 dilTercihiToolStripMenuItem.Visible = false;
@@ -139,9 +140,10 @@ namespace Stok_Programı
                 lbl_versiyon.Text = "Versiyon " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
             metin();
-            this.BackColor=Properties.Settings.Default.tema;
-            tableLayoutPanel4.BackColor = Properties.Settings.Default.tema;
-
+           // this.BackColor=Properties.Settings.Default.tema;
+            //tableLayoutPanel4.BackColor = Properties.Settings.Default.tema;
+            this.BackColor = Color.White;
+            tableLayoutPanel4.BackColor = Color.White;
             panel1.Location = new Point(this.ClientSize.Width / 2 - panel1.ClientSize.Width / 2, this.ClientSize.Height / 2 - panel1.ClientSize.Height / 2);
             panel1.Anchor = AnchorStyles.None;
 
@@ -341,8 +343,10 @@ namespace Stok_Programı
                 txt_cikis5.Text = DateTime.Now.ToString();
             else if (panel4.Visible == true)
                 txt_giristarihi.Text = DateTime.Now.ToString();
-            else if(panel3.Visible==true)
+            else if (panel3.Visible == true)
                 txt_kayit_tarihi.Text = DateTime.Now.ToString();
+            else if (panel6.Visible == true)
+                txt_kayit4.Text = DateTime.Now.ToString();
         }
         private void metin3()
         {
@@ -450,6 +454,7 @@ namespace Stok_Programı
             panel6.Anchor = AnchorStyles.None;
             panel6.Visible = true;
 
+
             dilTercihiToolStripMenuItem.Visible = false;
             excelDokümanıToolStripMenuItem.Visible = true;
             txt_firmaadi.Focus();
@@ -467,7 +472,6 @@ namespace Stok_Programı
                 btn_kaydet4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
             }
             metin4();
-            this.BackColor = Properties.Settings.Default.tema;
         }
         private void metin4()
         {
@@ -586,6 +590,67 @@ namespace Stok_Programı
         private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
+            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
+            dilTercihiToolStripMenuItem.Visible = false;
+            excelDokümanıToolStripMenuItem.Visible = false;
+            if (Properties.Settings.Default.dil == "İngilizce")
+            {
+                Localization.Culture = new CultureInfo("en-US");
+                btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungirisK.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikisK.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayitK.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmaK.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stokK.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclarK.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlarK.fw.png");
+                this.Text = Localization.form6;
+            }
+            else if (Properties.Settings.Default.dil == "Türkçe")
+            {
+                Localization.Culture = new CultureInfo("");
+                btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikis.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlar.fw.png");
+                this.Text = Localization.form6;
+            }
+
+            if (panel3.Visible == true)
+            {
+                cmbbx_firma_adi.Text = "";
+                txt_urun_kodu.Text = ""; 
+            }
+            else if(panel4.Visible==true)
+            {
+                cmbx_firmaadi.Text = "";
+                cmbx_urunadi.Text = "";
+                txt_adet.Text = "";
+                txt_giristarihi.Text = DateTime.Now.ToString();
+                txt_islem.Text = "";
+                pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            }
+            else if (panel5.Visible==true)
+            {
+                cmbbx_firma5.Text = "";
+                cmbx_urunkodu5.Text = "";
+                txt_adet5.Text = "";
+                txt_cikis5.Text = DateTime.Now.ToString();
+                pctrbx_resim5.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png"); 
+            }
+            else if (panel6.Visible == true)
+            {
+                txt_firmaadi.Text = "";
+                txt_sorumlu.Text = "";
+                txt_telno.Text = "";
+                txt_vergidaire.Text = "";
+                txt_vergino.Text = "";
+                cmbx_il.Text = "";
+                cmbx_ilce.Text = "";
+                txt_adres.Text = "";
+            }
             panel1.Visible = false;
             panel3.Visible = false;
             panel4.Visible = false;
@@ -593,6 +658,7 @@ namespace Stok_Programı
             panel6.Visible = false;
             panel7.Visible = false;
             panel8.Visible = false;
+            
         }
         private void firma_listele()
         {
@@ -610,7 +676,7 @@ namespace Stok_Programı
         {
             cmbbx_firma_adi.Text = "";
             txt_urun_kodu.Text = "";
-            txt_kayit_tarihi.Text = ""; 
+            txt_kayit_tarihi.Text = DateTime.Now.ToString() ; 
         }
 
         private void btn_kaydet_Click(object sender, EventArgs e)
