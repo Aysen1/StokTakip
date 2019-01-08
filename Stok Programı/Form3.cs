@@ -70,7 +70,7 @@ namespace Stok_Programı
             }
             metin();
             this.BackColor = Properties.Settings.Default.tema;
-            toolStripStatusLabel1.BackColor = Color.White;            
+            toolStripStatusLabel1.BackColor = Color.White;
         }
         private void firma_listele()
         {

@@ -148,10 +148,10 @@
             // 
             // lbl_firmaadi
             // 
-            this.lbl_firmaadi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_firmaadi.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_firmaadi.AutoSize = true;
             this.lbl_firmaadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_firmaadi.Location = new System.Drawing.Point(68, 36);
+            this.lbl_firmaadi.Location = new System.Drawing.Point(3, 36);
             this.lbl_firmaadi.Name = "lbl_firmaadi";
             this.lbl_firmaadi.Size = new System.Drawing.Size(63, 13);
             this.lbl_firmaadi.TabIndex = 16;
@@ -178,10 +178,10 @@
             // 
             // lbl_adet
             // 
-            this.lbl_adet.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_adet.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_adet.AutoSize = true;
             this.lbl_adet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_adet.Location = new System.Drawing.Point(63, 291);
+            this.lbl_adet.Location = new System.Drawing.Point(3, 291);
             this.lbl_adet.Name = "lbl_adet";
             this.lbl_adet.Size = new System.Drawing.Size(68, 13);
             this.lbl_adet.TabIndex = 11;
@@ -189,10 +189,10 @@
             // 
             // lbl_urunkodu
             // 
-            this.lbl_urunkodu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_urunkodu.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_urunkodu.AutoSize = true;
             this.lbl_urunkodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_urunkodu.Location = new System.Drawing.Point(60, 121);
+            this.lbl_urunkodu.Location = new System.Drawing.Point(3, 121);
             this.lbl_urunkodu.Name = "lbl_urunkodu";
             this.lbl_urunkodu.Size = new System.Drawing.Size(71, 13);
             this.lbl_urunkodu.TabIndex = 7;
@@ -220,10 +220,10 @@
             // 
             // lbl_giristarihi
             // 
-            this.lbl_giristarihi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_giristarihi.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_giristarihi.AutoSize = true;
             this.lbl_giristarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_giristarihi.Location = new System.Drawing.Point(61, 206);
+            this.lbl_giristarihi.Location = new System.Drawing.Point(3, 206);
             this.lbl_giristarihi.Name = "lbl_giristarihi";
             this.lbl_giristarihi.Size = new System.Drawing.Size(70, 13);
             this.lbl_giristarihi.TabIndex = 9;
