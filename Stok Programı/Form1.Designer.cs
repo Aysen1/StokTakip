@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excelDokümanıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dilTercihiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_kullanici_adi = new System.Windows.Forms.Label();
             this.txt_kullanici_isim = new System.Windows.Forms.TextBox();
@@ -61,8 +67,9 @@
             this.pctrbx_logo = new System.Windows.Forms.PictureBox();
             this.lbl_kullanicigiris = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_tamekran = new System.Windows.Forms.Button();
+            this.pctr_logo = new System.Windows.Forms.PictureBox();
             this.btn_simge = new System.Windows.Forms.Button();
+            this.btn_tamekran = new System.Windows.Forms.Button();
             this.btn_cikiss = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -172,13 +179,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.lbl_tema = new System.Windows.Forms.Label();
             this.btn_tema = new System.Windows.Forms.Button();
-            this.excelDokümanıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dilTercihiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pctr_logo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -189,6 +189,7 @@
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_logo)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -229,7 +230,6 @@
             this.tableLayoutPanel28.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -253,6 +253,50 @@
             this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
             this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
+            // 
+            // excelDokümanıToolStripMenuItem
+            // 
+            this.excelDokümanıToolStripMenuItem.Name = "excelDokümanıToolStripMenuItem";
+            this.excelDokümanıToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.excelDokümanıToolStripMenuItem.Text = "Excel Dokümanı";
+            this.excelDokümanıToolStripMenuItem.Click += new System.EventHandler(this.excelDokümanıToolStripMenuItem_Click);
+            // 
+            // dilTercihiToolStripMenuItem
+            // 
+            this.dilTercihiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.türkçeToolStripMenuItem,
+            this.ingilizceToolStripMenuItem});
+            this.dilTercihiToolStripMenuItem.Name = "dilTercihiToolStripMenuItem";
+            this.dilTercihiToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.dilTercihiToolStripMenuItem.Text = "Dil Tercihi";
+            // 
+            // türkçeToolStripMenuItem
+            // 
+            this.türkçeToolStripMenuItem.Name = "türkçeToolStripMenuItem";
+            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.türkçeToolStripMenuItem.Text = "Türkçe";
+            this.türkçeToolStripMenuItem.Click += new System.EventHandler(this.türkçeToolStripMenuItem_Click);
+            // 
+            // ingilizceToolStripMenuItem
+            // 
+            this.ingilizceToolStripMenuItem.Name = "ingilizceToolStripMenuItem";
+            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.ingilizceToolStripMenuItem.Text = "İngilizce";
+            this.ingilizceToolStripMenuItem.Click += new System.EventHandler(this.ingilizceToolStripMenuItem_Click);
+            // 
+            // yardımToolStripMenuItem
+            // 
+            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.yardımToolStripMenuItem.Text = "Yardım";
+            this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click_1);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -676,15 +720,16 @@
             // 
             this.tableLayoutPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel8.AutoScroll = true;
             this.tableLayoutPanel8.ColumnCount = 4;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1113F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel8.Controls.Add(this.btn_cikiss, 3, 0);
-            this.tableLayoutPanel8.Controls.Add(this.btn_tamekran, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.btn_simge, 1, 0);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1153F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel8.Controls.Add(this.pctr_logo, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_simge, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_tamekran, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btn_cikiss, 3, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(6, 27);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -692,36 +737,44 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1285, 51);
             this.tableLayoutPanel8.TabIndex = 5;
             // 
-            // btn_tamekran
+            // pctr_logo
             // 
-            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_tamekran.FlatAppearance.BorderSize = 0;
-            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tamekran.Location = new System.Drawing.Point(1183, 10);
-            this.btn_tamekran.Name = "btn_tamekran";
-            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
-            this.btn_tamekran.TabIndex = 7;
-            this.btn_tamekran.UseVisualStyleBackColor = true;
-            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            this.pctr_logo.Location = new System.Drawing.Point(3, 3);
+            this.pctr_logo.Name = "pctr_logo";
+            this.pctr_logo.Size = new System.Drawing.Size(248, 39);
+            this.pctr_logo.TabIndex = 9;
+            this.pctr_logo.TabStop = false;
             // 
             // btn_simge
             // 
-            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_simge.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_simge.FlatAppearance.BorderSize = 0;
             this.btn_simge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simge.Location = new System.Drawing.Point(1125, 10);
+            this.btn_simge.Location = new System.Drawing.Point(1166, 10);
             this.btn_simge.Name = "btn_simge";
             this.btn_simge.Size = new System.Drawing.Size(30, 30);
             this.btn_simge.TabIndex = 6;
             this.btn_simge.UseVisualStyleBackColor = true;
             this.btn_simge.Click += new System.EventHandler(this.btn_simge_Click);
             // 
+            // btn_tamekran
+            // 
+            this.btn_tamekran.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tamekran.FlatAppearance.BorderSize = 0;
+            this.btn_tamekran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tamekran.Location = new System.Drawing.Point(1207, 10);
+            this.btn_tamekran.Name = "btn_tamekran";
+            this.btn_tamekran.Size = new System.Drawing.Size(30, 30);
+            this.btn_tamekran.TabIndex = 7;
+            this.btn_tamekran.UseVisualStyleBackColor = true;
+            this.btn_tamekran.Click += new System.EventHandler(this.btn_tamekran_Click);
+            // 
             // btn_cikiss
             // 
-            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cikiss.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_cikiss.FlatAppearance.BorderSize = 0;
             this.btn_cikiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cikiss.Location = new System.Drawing.Point(1241, 10);
+            this.btn_cikiss.Location = new System.Drawing.Point(1248, 10);
             this.btn_cikiss.Name = "btn_cikiss";
             this.btn_cikiss.Size = new System.Drawing.Size(30, 30);
             this.btn_cikiss.TabIndex = 8;
@@ -741,7 +794,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.tableLayoutPanel9);
-            this.panel2.Location = new System.Drawing.Point(23, 70);
+            this.panel2.Location = new System.Drawing.Point(23, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(522, 269);
             this.panel2.TabIndex = 7;
@@ -886,7 +939,7 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.tableLayoutPanel12);
-            this.panel3.Location = new System.Drawing.Point(9, 70);
+            this.panel3.Location = new System.Drawing.Point(9, 75);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(576, 347);
             this.panel3.TabIndex = 8;
@@ -2017,58 +2070,6 @@
             this.btn_tema.UseVisualStyleBackColor = true;
             this.btn_tema.Click += new System.EventHandler(this.btn_tema_Click);
             // 
-            // excelDokümanıToolStripMenuItem
-            // 
-            this.excelDokümanıToolStripMenuItem.Name = "excelDokümanıToolStripMenuItem";
-            this.excelDokümanıToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.excelDokümanıToolStripMenuItem.Text = "Excel Dokümanı";
-            this.excelDokümanıToolStripMenuItem.Click += new System.EventHandler(this.excelDokümanıToolStripMenuItem_Click);
-            // 
-            // dilTercihiToolStripMenuItem
-            // 
-            this.dilTercihiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.türkçeToolStripMenuItem,
-            this.ingilizceToolStripMenuItem});
-            this.dilTercihiToolStripMenuItem.Name = "dilTercihiToolStripMenuItem";
-            this.dilTercihiToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.dilTercihiToolStripMenuItem.Text = "Dil Tercihi";
-            // 
-            // türkçeToolStripMenuItem
-            // 
-            this.türkçeToolStripMenuItem.Name = "türkçeToolStripMenuItem";
-            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.türkçeToolStripMenuItem.Text = "Türkçe";
-            this.türkçeToolStripMenuItem.Click += new System.EventHandler(this.türkçeToolStripMenuItem_Click);
-            // 
-            // ingilizceToolStripMenuItem
-            // 
-            this.ingilizceToolStripMenuItem.Name = "ingilizceToolStripMenuItem";
-            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ingilizceToolStripMenuItem.Text = "İngilizce";
-            this.ingilizceToolStripMenuItem.Click += new System.EventHandler(this.ingilizceToolStripMenuItem_Click);
-            // 
-            // yardımToolStripMenuItem
-            // 
-            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.yardımToolStripMenuItem.Text = "Yardım";
-            this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click_1);
-            // 
-            // çıkışToolStripMenuItem
-            // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
-            // 
-            // pctr_logo
-            // 
-            this.pctr_logo.Location = new System.Drawing.Point(3, 3);
-            this.pctr_logo.Name = "pctr_logo";
-            this.pctr_logo.Size = new System.Drawing.Size(248, 45);
-            this.pctr_logo.TabIndex = 9;
-            this.pctr_logo.TabStop = false;
-            // 
             // Form1
             // 
             this.AcceptButton = this.btn_giris;
@@ -2112,6 +2113,7 @@
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx_logo)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -2158,7 +2160,6 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctr_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

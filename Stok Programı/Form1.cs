@@ -13,6 +13,7 @@ using System.Globalization;
 using System.Drawing.Printing;
 using System.IO;
 using System.Management;
+using System.Drawing.Imaging;
 
 namespace Stok_Programı
 {
@@ -43,7 +44,7 @@ namespace Stok_Programı
                 panel1.Visible = false;
                 panel2.Anchor = AnchorStyles.Top - Left;
                 panel2.Visible = true;
-                pctr_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
+                pctr_logo.Image = Image.FromFile(Application.StartupPath+"\\image\\logo.jpeg");
 
                 excelDokümanıToolStripMenuItem.Visible = false;
                 dilTercihiToolStripMenuItem.Visible = false;
@@ -52,13 +53,13 @@ namespace Stok_Programı
                 {
                     Localization.Culture = new CultureInfo("en-US");
                     this.Text = Localization.form6;
-                    btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungirisK.fw.png");
-                    btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikisK.fw.png");
-                    btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayitK.fw.png");
-                    btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmaK.fw.png");
-                    btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stokK.fw.png");
-                    btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclarK.fw.png");
-                    btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlarK.fw.png");
+                    btn_giriss.BackgroundImage = Image.FromFile(Application.StartupPath+"\\image\\urungirisK.fw.png");
+                    btn_cikis.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\uruncikisK.fw.png");
+                    btn_urun.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ukayitK.fw.png");
+                    btn_firma.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\firmaK.fw.png");
+                    btn_stok.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\stokK.fw.png");
+                    btn_araclar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\araclarK.fw.png");
+                    btn_ayarlar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ayarlarK.fw.png");
                     anasayfaToolStripMenuItem.Text = Localization.lbl_anasayfa;
                     yardımToolStripMenuItem.Text = Localization.lbl_yardim;
                     çıkışToolStripMenuItem.Text = Localization.lbl_cikis;
@@ -67,13 +68,13 @@ namespace Stok_Programı
                 {
                     Localization.Culture = new CultureInfo("");
                     this.Text = Localization.form6;
-                    btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.fw.png");
-                    btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikis.fw.png");
-                    btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
-                    btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
-                    btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
-                    btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.fw.png");
-                    btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlar.fw.png");
+                    btn_giriss.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\urungiris.fw.png");
+                    btn_cikis.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\uruncikis.fw.png");
+                    btn_urun.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ukayit.fw.png");
+                    btn_firma.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\firma.fw.png");
+                    btn_stok.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\stok.fw.png");
+                    btn_araclar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\araclar.fw.png");
+                    btn_ayarlar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ayarlar.fw.png");
                 }
                 timer1.Start();
                 lbl_destek.Text = DateTime.Now.ToString();      
@@ -85,6 +86,7 @@ namespace Stok_Programı
                 MessageBox.Show( "Girilen Bilgiler Hatalıdır!Tekrar Deneyiniz.");
             baglanti.Close();
         }
+        System.Diagnostics.Process a = null;
         private void Form1_Load(object sender, EventArgs e)
         {
             menuStrip1.Visible = false;
@@ -93,20 +95,20 @@ namespace Stok_Programı
             lbl_versiyon.Text = Application.ProductVersion;
             lbl_nfm.Text = "NFM AJANS SAN. VE TIC. LTD. STI";
             lbl_destek.Text = "Destek Hattı: 0 (236) 231 40 10";
-            btn_0.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b0.fw.png");
-            btn_1.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b1.fw.png");
-            btn_2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b2.fw.png");
-            btn_3.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b3.fw.png");
-            btn_4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b4.fw.png");
-            btn_5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b5.fw.png");
-            btn_6.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b6.fw.png");
-            btn_7.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b7.fw.png");
-            btn_8.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b8.fw.png");
-            btn_9.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\b9.fw.png");
-            btn_simge.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\simge.fw.png");
-            btn_tamekran.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\tamekran.fw.png");
-            btn_cikiss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\cikis.fw.png");
-            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
+            btn_0.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b0.fw.png");
+            btn_1.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b1.fw.png");
+            btn_2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b2.fw.png");
+            btn_3.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b3.fw.png");
+            btn_4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b4.fw.png");
+            btn_5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b5.fw.png");
+            btn_6.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b6.fw.png");
+            btn_7.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b7.fw.png");
+            btn_8.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b8.fw.png");
+            btn_9.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\b9.fw.png");
+            btn_simge.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\simge.fw.png");
+            btn_tamekran.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\tamekran.fw.png");
+            btn_cikiss.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\cikis.fw.png");
+            pctrbx_logo.Image = Image.FromFile(Application.StartupPath + "\\image\\logo.jpeg");
 
             GraphicsPath gp1 = new GraphicsPath();
             gp1.AddEllipse(0, 0, btn_simge.Width - 1, btn_simge.Height - 1);
@@ -126,17 +128,17 @@ namespace Stok_Programı
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgirisK.fw.png");
-                btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptalK.fw.png");
-                btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsilK.fw.png");
+                btn_giris.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\bgirisK.fw.png");
+                btn_kapat.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\biptalK.fw.png");
+                btn_sil.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\bsilK.fw.png");
                 lbl_versiyon.Text = "Version " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bsil.fw.png");
-                btn_giris.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\bgiris.fw.png");
-                btn_kapat.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\biptal.fw.png");
+                btn_sil.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\bsil.fw.png");
+                btn_giris.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\bgiris.fw.png");
+                btn_kapat.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\biptal.fw.png");
                 lbl_versiyon.Text = "Versiyon " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
             metin();
@@ -147,7 +149,8 @@ namespace Stok_Programı
             panel1.Location = new Point(this.ClientSize.Width / 2 - panel1.ClientSize.Width / 2, this.ClientSize.Height / 2 - panel1.ClientSize.Height / 2);
             panel1.Anchor = AnchorStyles.None;
 
-            //System.Diagnostics.Process.Start("osk.exe");
+           /* if (a == null)
+                a = System.Diagnostics.Process.Start("osk.exe");*/
         }
         private void btn_kapat_Click(object sender, EventArgs e)
         {
@@ -226,6 +229,11 @@ namespace Stok_Programı
 
         private void btn_cikiss_Click(object sender, EventArgs e)
         {
+          /*  if (a != null)
+            {
+                a.Kill();
+                a.Dispose();
+            }*/
             Application.Exit();
         }
         private void metin()
@@ -317,20 +325,20 @@ namespace Stok_Programı
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
-                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
-                btn_resim_yukle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\yukleK.fw.png");
-                btn_resim_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sillK.fw.png");
+                btn_temizle.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizleK.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydetK.fw.png");
+                btn_resim_yukle.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\yukleK.fw.png");
+                btn_resim_sil.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\sillK.fw.png");
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_temizle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-                btn_kaydet.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
-                btn_resim_yukle.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\yukle.fw.png");
-                btn_resim_sil.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\sill.fw.png");
+                btn_temizle.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizle.fw.png");
+                btn_kaydet.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydet.fw.png");
+                btn_resim_yukle.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\yukle.fw.png");
+                btn_resim_sil.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\sill.fw.png");
             }
-            pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            pctrbx_urunresim.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
             metin3();
 
         }
@@ -371,17 +379,17 @@ namespace Stok_Programı
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_temizle2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
-                btn_kaydet2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
+                btn_temizle2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizleK.fw.png");
+                btn_kaydet2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydetK.fw.png");
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_temizle2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-                btn_kaydet2.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+                btn_temizle2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizle.fw.png");
+                btn_kaydet2.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydet.fw.png");
             }
             metin7();
-            pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            pctrbx_resim.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -421,17 +429,17 @@ namespace Stok_Programı
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_temizle5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
-                btn_kaydet5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
+                btn_temizle5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizleK.fw.png");
+                btn_kaydet5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydetK.fw.png");
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_temizle5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-                btn_kaydet5.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+                btn_temizle5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizle.fw.png");
+                btn_kaydet5.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydet.fw.png");
             }
             metin5();
-            pctrbx_resim5.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            pctrbx_resim5.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
 
         }
         private void metin5()
@@ -462,14 +470,14 @@ namespace Stok_Programı
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_temizle4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizleK.fw.png");
-                btn_kaydet4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydetK.fw.png");
+                btn_temizle4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizleK.fw.png");
+                btn_kaydet4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydetK.fw.png");
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_temizle4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\temizle.fw.png");
-                btn_kaydet4.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\kaydet.fw.png");
+                btn_temizle4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\temizle.fw.png");
+                btn_kaydet4.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\kaydet.fw.png");
             }
             metin4();
         }
@@ -590,31 +598,31 @@ namespace Stok_Programı
         private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
-            pctrbx_logo.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\logo.jpeg");
+            pctrbx_logo.Image = Image.FromFile(Application.StartupPath + "\\image\\logo.jpeg");
             dilTercihiToolStripMenuItem.Visible = false;
             excelDokümanıToolStripMenuItem.Visible = false;
             if (Properties.Settings.Default.dil == "İngilizce")
             {
                 Localization.Culture = new CultureInfo("en-US");
-                btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungirisK.fw.png");
-                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikisK.fw.png");
-                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayitK.fw.png");
-                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firmaK.fw.png");
-                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stokK.fw.png");
-                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclarK.fw.png");
-                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlarK.fw.png");
+                btn_giriss.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\urungirisK.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\uruncikisK.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ukayitK.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\firmaK.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\stokK.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\araclarK.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ayarlarK.fw.png");
                 this.Text = Localization.form6;
             }
             else if (Properties.Settings.Default.dil == "Türkçe")
             {
                 Localization.Culture = new CultureInfo("");
-                btn_giriss.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\urungiris.fw.png");
-                btn_cikis.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\uruncikis.fw.png");
-                btn_urun.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ukayit.fw.png");
-                btn_firma.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\firma.fw.png");
-                btn_stok.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\stok.fw.png");
-                btn_araclar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\araclar.fw.png");
-                btn_ayarlar.BackgroundImage = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\ayarlar.fw.png");
+                btn_giriss.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\urungiris.fw.png");
+                btn_cikis.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\uruncikis.fw.png");
+                btn_urun.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ukayit.fw.png");
+                btn_firma.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\firma.fw.png");
+                btn_stok.BackgroundImage = Image.FromFile(Application.StartupPath+"\\image\\stok.fw.png");
+                btn_araclar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\araclar.fw.png");
+                btn_ayarlar.BackgroundImage = Image.FromFile(Application.StartupPath + "\\image\\ayarlar.fw.png");
                 this.Text = Localization.form6;
             }
 
@@ -630,7 +638,7 @@ namespace Stok_Programı
                 txt_adet.Text = "";
                 txt_giristarihi.Text = DateTime.Now.ToString();
                 txt_islem.Text = "";
-                pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+                pctrbx_resim.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
             }
             else if (panel5.Visible==true)
             {
@@ -638,7 +646,7 @@ namespace Stok_Programı
                 cmbx_urunkodu5.Text = "";
                 txt_adet5.Text = "";
                 txt_cikis5.Text = DateTime.Now.ToString();
-                pctrbx_resim5.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png"); 
+                pctrbx_resim5.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png"); 
             }
             else if (panel6.Visible == true)
             {
@@ -705,23 +713,34 @@ namespace Stok_Programı
             komut2.CommandText = "insert into UrunKayit(FirmaAdi, UrunKodu, KayitTarihi, UrunResim, ToplamAdet) values ('" + cmbbx_firma_adi.Text + "','" + txt_urun_kodu.Text + "','" + txt_kayit_tarihi.Text + "',@image,0)";
             komut2.Parameters.Add("@image", SqlDbType.Image, resim.Length).Value = resim;
             komut2.ExecuteNonQuery();
+
             MessageBox.Show("Başarılı.");
             baglanti.Close();
         }
         private void btn_resim_yukle_Click(object sender, EventArgs e)
         {
             OpenFileDialog opfd1 = new OpenFileDialog();
+            SaveFileDialog save = new SaveFileDialog();
+            SaveFileDialog save1 = new SaveFileDialog();
             opfd1.Filter = "Png Dosyası (*.png)|*.png";
-            if (opfd1.ShowDialog() == DialogResult.OK)
+            save1.FileName = "";
+            save1.Filter = "Png Dosyası (*.png)|*.png";
+            save1.InitialDirectory = Application.StartupPath + "\\image";
+            save.InitialDirectory = "C:\\Pictures";
+            save1.DefaultExt = "png";
+
+            if (opfd1.ShowDialog() == DialogResult.OK && save1.ShowDialog()==DialogResult.OK && save.ShowDialog()==DialogResult.OK)
             {
                 pctrbx_urunresim.Image = Image.FromFile(opfd1.FileName);
-                resimpath = opfd1.FileName.ToString();
+                //resimpath = opfd1.FileName.ToString();
+                pctrbx_urunresim.Image.Save(save.FileName,ImageFormat.Png);
+                resimpath=save.FileName.ToString();
             }
         }
 
         private void btn_resim_sil_Click(object sender, EventArgs e)
         {
-            pctrbx_urunresim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            pctrbx_urunresim.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
         }
         private void il_listele()
         {
@@ -871,7 +890,7 @@ namespace Stok_Programı
             cmbx_urunkodu5.Text = "";
             txt_adet5.Text = "";
             txt_cikis5.Text = DateTime.Now.ToString();
-            pctrbx_resim5.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");            
+            pctrbx_resim5.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");            
         }
 
         private void cmbx_urunkodu5_SelectedIndexChanged(object sender, EventArgs e)
@@ -995,7 +1014,7 @@ namespace Stok_Programı
             txt_adet.Text = "";
             txt_giristarihi.Text = DateTime.Now.ToString();
             txt_islem.Text = "";
-            pctrbx_resim.Image = Image.FromFile("C:\\Users\\NFM-1PC\\Pictures\\fw_files\\barkod.png");
+            pctrbx_resim.Image = Image.FromFile(Application.StartupPath + "\\image\\barkod.png");
         }
 
         private void btn_kaydet2_Click(object sender, EventArgs e)

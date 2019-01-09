@@ -19,3 +19,5 @@ C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Progr
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\bin\Debug\en-US\Stok Programı.resources.dll
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\Stok_Programı.Localization.en-US.resources
 C:\Users\NFM-1PC\Documents\Visual Studio 2013\Projects\Stok Programı\Stok Programı\obj\Debug\en-US\Stok Programı.resources.dll
+C:\Users\NFM-1PC\documents\visual studio 2013\Projects\Stok Programı\Stok Programı\bin\Debug\Data\Stok.mdf
+C:\Users\NFM-1PC\documents\visual studio 2013\Projects\Stok Programı\Stok Programı\bin\Debug\Data\Stok_log.ldf
